@@ -37,3 +37,12 @@
 *.ipch
 .vs/Notus/v17/.suo
 *.user
+*.recipe
+*.ilk
+*.log
+*.pdb
+*.tlog
+x64/Debug/Notus.vcxproj.FileListAbsolute.txt
+*.idb
+*.vsidx
+*.lock
