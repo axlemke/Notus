@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\CommandList">
+      <UniqueIdentifier>{4dce9b68-f477-404f-8c04-e281b20d328d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CommandList">
+      <UniqueIdentifier>{b7542322-60ea-4800-8473-67b61802083d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GraphicsDevice">
+      <UniqueIdentifier>{a324133e-7ac2-496e-868b-9cd8e97ebbac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GraphicsDevice">
+      <UniqueIdentifier>{8465f721-b1e3-4ddb-a67d-dcb0f5e09a3f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -21,6 +33,12 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Public\CommandList\CommandList.h">
+      <Filter>Header Files\CommandList</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\GraphicsDevice\GraphicsDevice.h">
+      <Filter>Header Files\GraphicsDevice</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -28,6 +46,12 @@
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\CommandList\CommandList.cpp">
+      <Filter>Source Files\CommandList</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\GraphicsDevice\GraphicsDevice.cpp">
+      <Filter>Source Files\GraphicsDevice</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
