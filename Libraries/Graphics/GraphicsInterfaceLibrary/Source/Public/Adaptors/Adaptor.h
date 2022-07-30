@@ -2,7 +2,7 @@
 
 namespace Graphics
 {
-	class Device
+	class Adaptor
 	{
 	public:
 

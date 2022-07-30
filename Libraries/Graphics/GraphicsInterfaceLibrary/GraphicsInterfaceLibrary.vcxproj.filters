@@ -22,11 +22,14 @@
     <Filter Include="Header Files\GraphicsDevice">
       <UniqueIdentifier>{a324133e-7ac2-496e-868b-9cd8e97ebbac}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Devices">
-      <UniqueIdentifier>{70eca43e-e5b0-4c05-92a1-2c969628de19}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\GraphicsDevice">
       <UniqueIdentifier>{8465f721-b1e3-4ddb-a67d-dcb0f5e09a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Adaptors">
+      <UniqueIdentifier>{70eca43e-e5b0-4c05-92a1-2c969628de19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Adaptors">
+      <UniqueIdentifier>{60791e1e-1746-4d4d-b7d6-9f57701aa591}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,8 +42,8 @@
     <ClInclude Include="Source\Public\GraphicsDevice\GraphicsDevice.h">
       <Filter>Header Files\GraphicsDevice</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Public\Devices\Device.h">
-      <Filter>Header Files\Devices</Filter>
+    <ClInclude Include="Source\Public\Adaptors\Adaptor.h">
+      <Filter>Header Files\Adaptors</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +55,9 @@
     </ClCompile>
     <ClCompile Include="Source\Private\GraphicsDevice\GraphicsDevice.cpp">
       <Filter>Source Files\GraphicsDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Adaptors\Adaptor.cpp">
+      <Filter>Source Files\Adaptors</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

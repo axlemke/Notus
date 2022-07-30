@@ -83,12 +83,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Source\Public\Adaptors\Adaptor.h" />
     <ClInclude Include="Source\Public\CommandList\CommandList.h" />
-    <ClInclude Include="Source\Public\Devices\Device.h" />
     <ClInclude Include="Source\Public\GraphicsDevice\GraphicsDevice.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Source\Private\Adaptors\Adaptor.cpp" />
     <ClCompile Include="Source\Private\CommandList\CommandList.cpp" />
     <ClCompile Include="Source\Private\GraphicsDevice\GraphicsDevice.cpp" />
   </ItemGroup>
