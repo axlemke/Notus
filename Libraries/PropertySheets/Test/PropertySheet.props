@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)'=='Test'">
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Test'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Shared;%WindowsSdkDir\Include%WindowsSDKVersion%\\um</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_STATIC_LIBS;USE_PIX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Test|x64">
+      <Configuration>Test</Configuration>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test|Gaming.Desktop.x64">
+      <Configuration>Test</Configuration>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup>
+    <PackagesFolder>$(SolutionDir)packages\</PackagesFolder>
+  </PropertyGroup>
+</Project>

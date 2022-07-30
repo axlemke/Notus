@@ -1,3 +1,6 @@
+# Build Folders
+build/
+
 # Prerequisites
 *.d
 
@@ -67,3 +70,5 @@ packages/Microsoft.Direct3D.D3D12.1.606.3/LICENSE-CODE.txt
 packages/Microsoft.Direct3D.D3D12.1.606.3/LICENSE.txt
 packages/Microsoft.Direct3D.D3D12.1.606.3/Microsoft.Direct3D.D3D12.1.606.3.nupkg
 packages/Microsoft.Direct3D.D3D12.1.606.3/README.md
+*.iobj
+*.ipdb

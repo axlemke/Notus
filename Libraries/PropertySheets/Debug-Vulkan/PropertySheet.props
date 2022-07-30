@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)'=='Debug-Vulkan'">
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug-Vulkan'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Shared;%WindowsSdkDir\Include%WindowsSDKVersion%\\um</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;USE_VULKAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug-Vulkan|x64">
+      <Configuration>Debug-Vulkan</Configuration>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-Vulkan|Gaming.Desktop.x64">
+      <Configuration>Debug-Vulkan</Configuration>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup>
+    <PackagesFolder>$(SolutionDir)packages\</PackagesFolder>
+  </PropertyGroup>
+</Project>
