@@ -3,7 +3,7 @@
 #include <string>
 #include <stddef.h>
 
-#include "Libraries/Framework/LibraryShell/Source/Public/DLLCommon.h"
+#include "DLLCommon.h"
 
 #if defined(FINAL) // Don't use dlls in final builds
 #define LIBRARYSHELL_USAGE
