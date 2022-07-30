@@ -50,26 +50,5 @@ x64/Debug/Notus.vcxproj.FileListAbsolute.txt
 *.idb
 *.vsidx
 *.lock
-packages/Microsoft.Direct3D.D3D12.1.606.3/.signature.p7s
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/include/d3d12.h
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/include/d3d12.idl
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/include/d3d12sdklayers.h
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/include/d3d12sdklayers.idl
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/include/d3d12shader.h
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/include/d3d12video.h
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/include/d3d12video.idl
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/include/d3dcommon.h
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/include/d3dcommon.idl
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/include/dxgiformat.h
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/include/dxgiformat.idl
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/Microsoft.Direct3D.D3D12.props
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/Microsoft.Direct3D.D3D12.Rules.Project.xml
-packages/Microsoft.Direct3D.D3D12.1.606.3/build/native/Microsoft.Direct3D.D3D12.targets
-packages/Microsoft.Direct3D.D3D12.1.606.3/distributable files.txt
-packages/Microsoft.Direct3D.D3D12.1.606.3/icon.png
-packages/Microsoft.Direct3D.D3D12.1.606.3/LICENSE-CODE.txt
-packages/Microsoft.Direct3D.D3D12.1.606.3/LICENSE.txt
-packages/Microsoft.Direct3D.D3D12.1.606.3/Microsoft.Direct3D.D3D12.1.606.3.nupkg
-packages/Microsoft.Direct3D.D3D12.1.606.3/README.md
 *.iobj
 *.ipdb
