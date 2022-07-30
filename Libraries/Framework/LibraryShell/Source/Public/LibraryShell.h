@@ -13,7 +13,7 @@
 #define LIBRARYSHELL_USAGE LIBRARY_IMPORT
 #endif
 
-namespace HaveBlue
+namespace Framework
 {
 	class LibraryShell
 	{
