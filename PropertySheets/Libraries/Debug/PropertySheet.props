@@ -2,17 +2,22 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)'=='Test'">
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
     <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)'=='Test'">
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir)\Shared;%WindowsSdkDir\Include%WindowsSDKVersion%\\um</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>USE_STATIC_LIBS;USE_PIX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
@@ -28,14 +33,15 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Test|x64">
-      <Configuration>Test</Configuration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Test|Gaming.Desktop.x64">
-      <Configuration>Test</Configuration>
+    <ProjectConfiguration Include="Debug|Gaming.Desktop.x64">
+      <Configuration>Debug</Configuration>
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup>
     <PackagesFolder>$(SolutionDir)packages\</PackagesFolder>
+    <TargetExt>.dll</TargetExt>
   </PropertyGroup>
 </Project>
