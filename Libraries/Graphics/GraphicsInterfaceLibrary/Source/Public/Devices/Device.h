@@ -2,7 +2,7 @@
 
 namespace Graphics
 {
-	class GraphicsDevice
+	class Device
 	{
 	public:
 

@@ -1,0 +1,4 @@
+D:\devHome\GitHub\Notus\x64\Debug\D3D12\D3D12Core.dll
+D:\devHome\GitHub\Notus\x64\Debug\D3D12\D3D12Core.pdb
+D:\devHome\GitHub\Notus\x64\Debug\D3D12\D3D12SDKLayers.dll
+D:\devHome\GitHub\Notus\x64\Debug\D3D12\D3D12SDKLayers.pdb

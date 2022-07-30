@@ -22,6 +22,9 @@
     <Filter Include="Header Files\GraphicsDevice">
       <UniqueIdentifier>{a324133e-7ac2-496e-868b-9cd8e97ebbac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Devices">
+      <UniqueIdentifier>{70eca43e-e5b0-4c05-92a1-2c969628de19}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files\GraphicsDevice">
       <UniqueIdentifier>{8465f721-b1e3-4ddb-a67d-dcb0f5e09a3f}</UniqueIdentifier>
     </Filter>
@@ -30,21 +33,18 @@
     <ClInclude Include="framework.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Public\CommandList\CommandList.h">
       <Filter>Header Files\CommandList</Filter>
     </ClInclude>
     <ClInclude Include="Source\Public\GraphicsDevice\GraphicsDevice.h">
       <Filter>Header Files\GraphicsDevice</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Public\Devices\Device.h">
+      <Filter>Header Files\Devices</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source\Private\CommandList\CommandList.cpp">
