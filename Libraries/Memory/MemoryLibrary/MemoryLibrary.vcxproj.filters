@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0432df30-3eba-4bfd-8775-d9647091f072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d8a63fc3-c144-4df4-8ab5-34b2129e387c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{487a6d0b-a8c3-4f97-8062-2b95e88066ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Heaps">
+      <UniqueIdentifier>{c22fc829-ebe5-4cf3-ba33-5b811d611a77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Heaps">
+      <UniqueIdentifier>{abd9afea-bd6b-45de-85e0-4d0fa6618977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Pointers">
+      <UniqueIdentifier>{6f9daa95-a58a-46d6-a3ee-8c1d9859f04e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pointers">
+      <UniqueIdentifier>{3098cd8f-8fc1-482d-8528-9238e6d117f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Buffers">
+      <UniqueIdentifier>{29d7c16e-4ba3-4a8a-b856-679be60c2307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Allocators">
+      <UniqueIdentifier>{619e6c0b-a158-41c0-87c9-d35bcac4969d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Allocators">
+      <UniqueIdentifier>{b312ac2c-e005-447c-927b-cae4da90dcd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Heaps\Buffers">
+      <UniqueIdentifier>{3bd9abbf-b522-44ff-8bf3-1e1c043fa9da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{4fdd4f73-14c8-4bd4-9341-1753d0d88ba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{ce43c0d1-1804-41f7-8ef1-68ae62a2dd62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Public\MemoryCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\MemoryPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Pointers\ComPointer.h">
+      <Filter>Header Files\Pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Pointers\SharedPointer.h">
+      <Filter>Header Files\Pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Pointers\UniquePointer.h">
+      <Filter>Header Files\Pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Pointers\WeakPointer.h">
+      <Filter>Header Files\Pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Heaps\AllocationHeader.h">
+      <Filter>Header Files\Heaps</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Heaps\Heap.h">
+      <Filter>Header Files\Heaps</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Heaps\HeapManager.h">
+      <Filter>Header Files\Heaps</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Buffers\CircularBuffer.h">
+      <Filter>Header Files\Heaps\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Heaps\HeapInterface.h">
+      <Filter>Header Files\Heaps</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Heaps\FixedHeap.h">
+      <Filter>Header Files\Heaps</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Allocators\Allocator.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Allocators\LinearAllocator.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Allocators\TypedLinearAllocator.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Utils\CustomNewDeleteUtils.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Utils\MemcpyUtils.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Private\MemoryCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\MemoryPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Pointers\SharedPointer.cpp">
+      <Filter>Source Files\Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Heaps\AllocationHeader.cpp">
+      <Filter>Source Files\Heaps</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Heaps\Heap.cpp">
+      <Filter>Source Files\Heaps</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Heaps\HeapManager.cpp">
+      <Filter>Source Files\Heaps</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Heaps\HeapInterface.cpp">
+      <Filter>Source Files\Heaps</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Heaps\FixedHeap.cpp">
+      <Filter>Source Files\Heaps</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Allocators\LinearAllocator.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Utils\CustomNewDeleteUtils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Utils\MemcpyUtils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
