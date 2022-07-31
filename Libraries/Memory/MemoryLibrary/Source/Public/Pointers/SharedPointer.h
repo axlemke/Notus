@@ -1,7 +1,7 @@
 #pragma once
 
-#include "MemoryCommon.h"
-#include "Libraries/Framework/LibraryShell/Source/Public/CustomAssert.h"
+#include "Memory/MemoryLibrary/Source/Public/MemoryCommon.h"
+#include <Framework/LibraryShell/Source/Public/CustomAssert.h>
 
 namespace Memory
 {
