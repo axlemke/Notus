@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TimerSystem", "Libraries\Sy
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultithreadingLibrary", "Libraries\Systems\MultithreadingLibrary\MultithreadingLibrary.vcxproj", "{101A77EF-391F-47E4-BD6A-DC374FB07951}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InputInterfaceLibrary", "Libraries\Input\InputInterfaceLibrary\InputInterfaceLibrary.vcxproj", "{DCF38E83-A8C3-4A71-A59F-CF258FB72AB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,10 @@ Global
 		{101A77EF-391F-47E4-BD6A-DC374FB07951}.Debug|x64.Build.0 = Debug|x64
 		{101A77EF-391F-47E4-BD6A-DC374FB07951}.Release|x64.ActiveCfg = Release|x64
 		{101A77EF-391F-47E4-BD6A-DC374FB07951}.Release|x64.Build.0 = Release|x64
+		{DCF38E83-A8C3-4A71-A59F-CF258FB72AB4}.Debug|x64.ActiveCfg = Debug|x64
+		{DCF38E83-A8C3-4A71-A59F-CF258FB72AB4}.Debug|x64.Build.0 = Debug|x64
+		{DCF38E83-A8C3-4A71-A59F-CF258FB72AB4}.Release|x64.ActiveCfg = Release|x64
+		{DCF38E83-A8C3-4A71-A59F-CF258FB72AB4}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -138,6 +144,7 @@ Global
 		{3738A14C-B324-4DBA-AC9B-776C383ADDD1} = {F689290D-DD4F-4D32-88BB-F8D150F2C84D}
 		{584F120F-FDE7-4F37-A922-D53B7329F5BE} = {98080893-51CF-4056-8E00-6957065E14CB}
 		{101A77EF-391F-47E4-BD6A-DC374FB07951} = {98080893-51CF-4056-8E00-6957065E14CB}
+		{DCF38E83-A8C3-4A71-A59F-CF258FB72AB4} = {3738A14C-B324-4DBA-AC9B-776C383ADDD1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {58EC826A-F44B-4EAE-BAC7-7E26FB80BFFF}
