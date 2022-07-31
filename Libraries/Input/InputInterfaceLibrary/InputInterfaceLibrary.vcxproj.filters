@@ -25,6 +25,24 @@
     <Filter Include="Header Files\Devices">
       <UniqueIdentifier>{d1ccef57-7e17-439f-8b63-c3ab523b6949}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Devices\Mouse">
+      <UniqueIdentifier>{8d9ca70e-fe0b-4fa5-805f-33a5ca309908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Devices\Keyboard">
+      <UniqueIdentifier>{71145bad-4d43-445d-8ec2-6c215582e35d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Devices\Controller">
+      <UniqueIdentifier>{006624ce-b9b7-4245-ba8b-c5842dd8fb84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Devices\Mouse">
+      <UniqueIdentifier>{0b929861-70dd-4035-b950-cbc87d8ae48a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Devices\Keyboard">
+      <UniqueIdentifier>{fccd1df6-cb90-4516-8095-0f72139ba432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Devices\Controller">
+      <UniqueIdentifier>{e3abb681-bd7b-4e65-b32a-c221a8144fd1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -35,6 +53,18 @@
     </ClInclude>
     <ClInclude Include="Source\Public\Devices\DeviceInterface.h">
       <Filter>Header Files\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Devices\Mouse\MouseButtons.h">
+      <Filter>Source Files\Devices\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Devices\Keyboard\KeyCode.h">
+      <Filter>Source Files\Devices\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Devices\Controller\ControllerAxises.h">
+      <Filter>Source Files\Devices\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Devices\Controller\ControllerButtons.h">
+      <Filter>Source Files\Devices\Controller</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

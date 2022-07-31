@@ -1,0 +1,30 @@
+#pragma once
+
+namespace Input
+{
+	enum class ControllerButton
+	{
+		// GAMEPAD
+		A_BUTTON,
+		B_BUTTON,
+		X_BUTTON,
+		Y_BUTTON,
+		START_BUTTON,
+		SELECT_BUTTON,
+		LEFT_BUMPER,
+		RIGHT_BUMPER,
+		LEFT_STICK_CLICK,
+		RIGHT_STICK_CLICK,
+		DPAD_UP,
+		DPAD_DOWN,
+		DPAD_LEFT,
+		DPAD_RIGHT,
+
+		// GUITAR
+		GREEN = A_BUTTON,
+		RED = B_BUTTON,
+		YELLOW = Y_BUTTON,
+		BLUE = X_BUTTON,
+		ORANGE = LEFT_BUMPER
+	};
+}

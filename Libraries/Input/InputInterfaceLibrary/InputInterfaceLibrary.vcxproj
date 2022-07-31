@@ -14,7 +14,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Public\Devices\Controller\ControllerAxises.h" />
+    <ClInclude Include="Source\Public\Devices\Controller\ControllerButtons.h" />
     <ClInclude Include="Source\Public\Devices\DeviceInterface.h" />
+    <ClInclude Include="Source\Public\Devices\Keyboard\KeyCode.h" />
+    <ClInclude Include="Source\Public\Devices\Mouse\MouseButtons.h" />
     <ClInclude Include="Source\Public\InputInterfaceCommon.h" />
   </ItemGroup>
   <ItemGroup>
