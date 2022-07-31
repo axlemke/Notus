@@ -2,7 +2,6 @@
 
 #include "Framework/LibraryShell/Source/Public/DLLCommon.h"
 
-
 #if defined(FINAL) // Don't use dlls in final builds
 #define GRAPHICS_INTERFACE_USAGE
 #elif defined(GRAPHICSINTERFACELIBRARY_EXPORTS) // export
