@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D2D7A34B-DC29-4166-9075-8073047290C2}</ProjectGuid>
+    <RootNamespace>LibraryTemplate</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)PropertySheets\Libraries\$(Configuration)\PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MATH_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/d2Zi+ %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>MATH_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Public\BitManipulation\BitFlags.h" />
+    <ClInclude Include="Source\Public\BitManipulation\BitManipulation.h" />
+    <ClInclude Include="Source\Public\BitManipulation\BitMask.h" />
+    <ClInclude Include="Source\Public\Hashing\Hashing.h" />
+    <ClInclude Include="Source\Public\Int\Int2.h" />
+    <ClInclude Include="Source\Public\Int\Int3.h" />
+    <ClInclude Include="Source\Public\Int\Int4.h" />
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Cubic\CubicBezier2D.h" />
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Cubic\CubicBezier3D.h" />
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Cubic\CubicBezierUtils.h" />
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Quadratic\QuadraticBezier2D.h" />
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Quadratic\QuadraticBezier3D.h" />
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Quadratic\QuadraticBezierUtils.h" />
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Spline\Spline2D.h" />
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Spline\Spline3D.h" />
+    <ClInclude Include="Source\Public\Lines\Curves\Hermite\Cubic\CubicHermite2D.h" />
+    <ClInclude Include="Source\Public\Lines\Curves\Hermite\Cubic\CubicHermite3D.h" />
+    <ClInclude Include="Source\Public\Lines\Curves\Hermite\Cubic\CubicHermiteUtils.h" />
+    <ClInclude Include="Source\Public\Lines\Line2D.h" />
+    <ClInclude Include="Source\Public\Lines\Line3D.h" />
+    <ClInclude Include="Source\Public\MathCommon.h" />
+    <ClInclude Include="Source\Public\MathConstants.h" />
+    <ClInclude Include="Source\Public\Matrix\Matrix.h" />
+    <ClInclude Include="Source\Public\Matrix\Matrix2x2.h" />
+    <ClInclude Include="Source\Public\Matrix\Matrix3x3.h" />
+    <ClInclude Include="Source\Public\Matrix\Matrix3x4.h" />
+    <ClInclude Include="Source\Public\Matrix\Matrix4x4.h" />
+    <ClInclude Include="Source\Public\Operations\Barycentric.h" />
+    <ClInclude Include="Source\Public\Operations\Clamp.h" />
+    <ClInclude Include="Source\Public\Operations\Colinear.h" />
+    <ClInclude Include="Source\Public\Operations\Distance.h" />
+    <ClInclude Include="Source\Public\Operations\Floating.h" />
+    <ClInclude Include="Source\Public\Operations\Interpolation.h" />
+    <ClInclude Include="Source\Public\Operations\Intersection.h" />
+    <ClInclude Include="Source\Public\Operations\MinMax.h" />
+    <ClInclude Include="Source\Public\Operations\Pythagorean.h" />
+    <ClInclude Include="Source\Public\Operations\Quadratic.h" />
+    <ClInclude Include="Source\Public\Operations\Remap.h" />
+    <ClInclude Include="Source\Public\Operations\Rounding.h" />
+    <ClInclude Include="Source\Public\Operations\Saturate.h" />
+    <ClInclude Include="Source\Public\Quaternion\DualQuaternion.h" />
+    <ClInclude Include="Source\Public\Quaternion\Quaternion.h" />
+    <ClInclude Include="Source\Public\Range\Range.h" />
+    <ClInclude Include="Source\Public\Ray\Ray2D.h" />
+    <ClInclude Include="Source\Public\Ray\Ray3D.h" />
+    <ClInclude Include="Source\Public\Surfaces\Bezier\Patches\CubicBezierPatch.h" />
+    <ClInclude Include="Source\Public\Surfaces\Bezier\Triangles\QuadraticBezierTriangle.h" />
+    <ClInclude Include="Source\Public\Surfaces\Disk\Disk.h" />
+    <ClInclude Include="Source\Public\Surfaces\Plane\Plane.h" />
+    <ClInclude Include="Source\Public\Surfaces\Triangles\Triangle2D.h" />
+    <ClInclude Include="Source\Public\Surfaces\Triangles\Triangle3D.h" />
+    <ClInclude Include="Source\Public\Transform\Transform.h" />
+    <ClInclude Include="Source\Public\Transform\Transform4.h" />
+    <ClInclude Include="Source\Public\Uint\Uint2.h" />
+    <ClInclude Include="Source\Public\Uint\Uint3.h" />
+    <ClInclude Include="Source\Public\Uint\Uint4.h" />
+    <ClInclude Include="Source\Public\Vector\Vector2.h" />
+    <ClInclude Include="Source\Public\Vector\Vector3.h" />
+    <ClInclude Include="Source\Public\Vector\Vector4.h" />
+    <ClInclude Include="Source\Public\Volumes\AxisAlignedBoundingBox\AxisAlignedBoundingBox2D.h" />
+    <ClInclude Include="Source\Public\Volumes\AxisAlignedBoundingBox\AxisAlignedBoundingBox3D.h" />
+    <ClInclude Include="Source\Public\Volumes\Capsule\Capsule2D.h" />
+    <ClInclude Include="Source\Public\Volumes\Capsule\Capsule3D.h" />
+    <ClInclude Include="Source\Public\Volumes\Cone\Cone.h" />
+    <ClInclude Include="Source\Public\Volumes\Cylinder\Cylinder.h" />
+    <ClInclude Include="Source\Public\Volumes\Frustum\Frustum.h" />
+    <ClInclude Include="Source\Public\Volumes\OrientedBoundingBox\OrientedBoundingBox2D.h" />
+    <ClInclude Include="Source\Public\Volumes\OrientedBoundingBox\OrientedBoundingBox3D.h" />
+    <ClInclude Include="Source\Public\Volumes\Sphere\Sphere2D.h" />
+    <ClInclude Include="Source\Public\Volumes\Sphere\Sphere3D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Private\Hashing\Hashing.cpp" />
+    <ClCompile Include="Source\Private\Int\Int2.cpp" />
+    <ClCompile Include="Source\Private\Int\Int3.cpp" />
+    <ClCompile Include="Source\Private\Int\Int4.cpp" />
+    <ClCompile Include="Source\Private\Lines\Curves\Bezier\Cubic\CubicBezier2D.cpp" />
+    <ClCompile Include="Source\Private\Lines\Curves\Bezier\Cubic\CubicBezier3D.cpp" />
+    <ClCompile Include="Source\Private\Lines\Curves\Bezier\Quadratic\QuadraticBezier2D.cpp" />
+    <ClCompile Include="Source\Private\Lines\Curves\Bezier\Quadratic\QuadraticBezier3D.cpp" />
+    <ClCompile Include="Source\Private\Lines\Curves\Bezier\Splines\Spline2D.cpp" />
+    <ClCompile Include="Source\Private\Lines\Curves\Bezier\Splines\Spline3D.cpp" />
+    <ClCompile Include="Source\Private\Lines\Curves\Hermite\Cubic\CubicHermite2D.cpp" />
+    <ClCompile Include="Source\Private\Lines\Curves\Hermite\Cubic\CubicHermite3D.cpp" />
+    <ClCompile Include="Source\Private\Lines\Line2D.cpp" />
+    <ClCompile Include="Source\Private\Lines\Line3D.cpp" />
+    <ClCompile Include="Source\Private\Matrix\Matrix.cpp" />
+    <ClCompile Include="Source\Private\Matrix\Matrix2x2.cpp" />
+    <ClCompile Include="Source\Private\Matrix\Matrix3x3.cpp" />
+    <ClCompile Include="Source\Private\Matrix\Matrix3x4.cpp" />
+    <ClCompile Include="Source\Private\Matrix\Matrix4x4.cpp" />
+    <ClCompile Include="Source\Private\Operations\Barycentric.cpp" />
+    <ClCompile Include="Source\Private\Operations\Clamp.cpp" />
+    <ClCompile Include="Source\Private\Operations\Colinear.cpp" />
+    <ClCompile Include="Source\Private\Operations\Distance.cpp" />
+    <ClCompile Include="Source\Private\Operations\Floating.cpp" />
+    <ClCompile Include="Source\Private\Operations\Interpolation.cpp" />
+    <ClCompile Include="Source\Private\Operations\Intersection.cpp" />
+    <ClCompile Include="Source\Private\Operations\MinMax.cpp" />
+    <ClCompile Include="Source\Private\Operations\Pythagorean.cpp" />
+    <ClCompile Include="Source\Private\Operations\Quadratic.cpp" />
+    <ClCompile Include="Source\Private\Operations\Remap.cpp" />
+    <ClCompile Include="Source\Private\Operations\Rounding.cpp" />
+    <ClCompile Include="Source\Private\Operations\Saturate.cpp" />
+    <ClCompile Include="Source\Private\Quaternion\DualQuaternion.cpp" />
+    <ClCompile Include="Source\Private\Quaternion\Quaternion.cpp" />
+    <ClCompile Include="Source\Private\Range\Range.cpp" />
+    <ClCompile Include="Source\Private\Ray\Ray2D.cpp" />
+    <ClCompile Include="Source\Private\Ray\Ray3D.cpp" />
+    <ClCompile Include="Source\Private\Surfaces\Bezier\Patches\CubicBezierPatch.cpp" />
+    <ClCompile Include="Source\Private\Surfaces\Bezier\Triangles\QuadraticBezierTriangle.cpp" />
+    <ClCompile Include="Source\Private\Surfaces\Disk\Disk.cpp" />
+    <ClCompile Include="Source\Private\Surfaces\Plane\Plane.cpp" />
+    <ClCompile Include="Source\Private\Surfaces\Triangles\Triangle2D.cpp" />
+    <ClCompile Include="Source\Private\Surfaces\Triangles\Triangle3D.cpp" />
+    <ClCompile Include="Source\Private\Transform\Transform.cpp" />
+    <ClCompile Include="Source\Private\Transform\Transform4.cpp" />
+    <ClCompile Include="Source\Private\Uint\Uint2.cpp" />
+    <ClCompile Include="Source\Private\Uint\Uint3.cpp" />
+    <ClCompile Include="Source\Private\Uint\Uint4.cpp" />
+    <ClCompile Include="Source\Private\Vector\Vector2.cpp" />
+    <ClCompile Include="Source\Private\Vector\Vector3.cpp" />
+    <ClCompile Include="Source\Private\Vector\Vector4.cpp" />
+    <ClCompile Include="Source\Private\Volumes\AxisAlignedBoundingBox\AxisAlignedBoundingBox2D.cpp" />
+    <ClCompile Include="Source\Private\Volumes\AxisAlignedBoundingBox\AxisAlignedBoundingBox3D.cpp" />
+    <ClCompile Include="Source\Private\Volumes\Capsule\Capsule2D.cpp" />
+    <ClCompile Include="Source\Private\Volumes\Capsule\Capsule3D.cpp" />
+    <ClCompile Include="Source\Private\Volumes\Cone\Cone.cpp" />
+    <ClCompile Include="Source\Private\Volumes\Cylinder\Cylinder.cpp" />
+    <ClCompile Include="Source\Private\Volumes\Frustum\Frustum.cpp" />
+    <ClCompile Include="Source\Private\Volumes\OrientedBoundingBox\OrientedBoundingBox2D.cpp" />
+    <ClCompile Include="Source\Private\Volumes\OrientedBoundingBox\OrientedBoundingBox3D.cpp" />
+    <ClCompile Include="Source\Private\Volumes\Sphere\Sphere2D.cpp" />
+    <ClCompile Include="Source\Private\Volumes\Sphere\Sphere3D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\LibraryShell\LibraryShell.vcxproj">
+      <Project>{88a09185-508f-49e8-a204-32e36759031d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\..\..\packages\directxmath.2022.5.18.1\build\native\directxmath.targets" Condition="Exists('..\..\..\packages\directxmath.2022.5.18.1\build\native\directxmath.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\packages\directxmath.2022.5.18.1\build\native\directxmath.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\directxmath.2022.5.18.1\build\native\directxmath.targets'))" />
+  </Target>
+</Project>

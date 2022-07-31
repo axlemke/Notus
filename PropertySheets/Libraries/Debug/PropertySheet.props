@@ -7,7 +7,7 @@
     <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
-    <PropertyGroup>
+  <PropertyGroup>
     <_PropertySheetDisplayName>PropertySheet</_PropertySheetDisplayName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
@@ -15,7 +15,7 @@
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)Source\Public\;$(SolutionDir)Libraries</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source\Public\;$(SolutionDir)Libraries;$(SolutionDir)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>

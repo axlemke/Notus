@@ -35,6 +35,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pipeline", "Pipeline", "{CC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Systems", "Systems", "{98080893-51CF-4056-8E00-6957065E14CB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathLibrary", "Libraries\Math\MathLibrary\MathLibrary.vcxproj", "{D2D7A34B-DC29-4166-9075-8073047290C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,10 @@ Global
 		{88A09185-508F-49E8-A204-32E36759031D}.Debug|x64.Build.0 = Debug|x64
 		{88A09185-508F-49E8-A204-32E36759031D}.Release|x64.ActiveCfg = Release|x64
 		{88A09185-508F-49E8-A204-32E36759031D}.Release|x64.Build.0 = Release|x64
+		{D2D7A34B-DC29-4166-9075-8073047290C2}.Debug|x64.ActiveCfg = Debug|x64
+		{D2D7A34B-DC29-4166-9075-8073047290C2}.Debug|x64.Build.0 = Debug|x64
+		{D2D7A34B-DC29-4166-9075-8073047290C2}.Release|x64.ActiveCfg = Release|x64
+		{D2D7A34B-DC29-4166-9075-8073047290C2}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{4038BDFE-D38A-44E7-BA5E-9DEBA92BD827} = {F689290D-DD4F-4D32-88BB-F8D150F2C84D}
 		{CC31B9A3-C7A1-403D-B935-D8859E5269A4} = {F689290D-DD4F-4D32-88BB-F8D150F2C84D}
 		{98080893-51CF-4056-8E00-6957065E14CB} = {F689290D-DD4F-4D32-88BB-F8D150F2C84D}
+		{D2D7A34B-DC29-4166-9075-8073047290C2} = {B0947577-128C-448E-9B40-6B8904FE1F8A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {58EC826A-F44B-4EAE-BAC7-7E26FB80BFFF}

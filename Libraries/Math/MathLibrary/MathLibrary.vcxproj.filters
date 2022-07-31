@@ -1,0 +1,621 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{140da474-c17a-46e9-ba3e-62434f645fb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{11c429b7-1349-4d24-9d32-67e274bfc0cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Matrix">
+      <UniqueIdentifier>{7cced910-a89f-4a9c-acc0-0091d9fffb88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Vector">
+      <UniqueIdentifier>{619e5887-afe7-4a63-861c-d76666722a1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Matrix">
+      <UniqueIdentifier>{1ae40561-4adf-43c1-9b3b-06e20ac6bdb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Vector">
+      <UniqueIdentifier>{98e62d69-4569-441b-888c-67008b10e804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Volumes">
+      <UniqueIdentifier>{234192cc-5464-4456-9590-43173469780c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Volumes">
+      <UniqueIdentifier>{cb008d5d-579f-4b65-b6cf-fd79e9b9ea17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bit Manipulation">
+      <UniqueIdentifier>{0ef7355a-cc31-40bb-b216-eded802153e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lines">
+      <UniqueIdentifier>{bbc2448a-2523-4693-a13e-7830968b1d8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lines">
+      <UniqueIdentifier>{90670eab-da3d-4eac-bace-23ce43c8becb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rays">
+      <UniqueIdentifier>{0d9b0875-e45e-46f0-a686-20897c2a6f51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Rays">
+      <UniqueIdentifier>{6ecc2eb1-6d0f-496c-bc5f-bffe16b2e49f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Transform">
+      <UniqueIdentifier>{9d573c99-a9da-4840-ba08-b1c4ea2eab2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Transform">
+      <UniqueIdentifier>{be045dc3-4e19-4559-9dd8-f98a78e264b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Volumes\AxisAlignedBoundingBox">
+      <UniqueIdentifier>{52c7cc77-fa73-4a84-8bad-81c9cc4c4e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Volumes\AxisAlignedBoundingBox">
+      <UniqueIdentifier>{3aa2632f-125d-479c-8d05-962828dd72ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Volumes\Sphere">
+      <UniqueIdentifier>{4eb57510-c2a4-46fd-a023-15ed53737ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Volumes\Sphere">
+      <UniqueIdentifier>{3698fa14-014f-446a-9397-5722d71fee8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Hashing">
+      <UniqueIdentifier>{003b5b39-1a55-420f-962d-68a4a2060b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hashing">
+      <UniqueIdentifier>{e04253eb-bd4a-4e41-b1b5-00ef51694032}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Operations">
+      <UniqueIdentifier>{ba215f02-a43a-47fa-a7d3-89fe5b6b1407}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Surfaces">
+      <UniqueIdentifier>{48a6d07b-362e-4f85-882e-f0f6e5231f79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Surfaces">
+      <UniqueIdentifier>{877aeb10-b5bc-4f83-b9c1-3b868493615c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Operations">
+      <UniqueIdentifier>{0342a2f2-444b-49bb-bcfd-c6b30608e78b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Surfaces\Triangles">
+      <UniqueIdentifier>{7c5b8991-df38-4459-93a3-5f570f0c5001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Surfaces\Triangles">
+      <UniqueIdentifier>{a2979f00-c3a5-4e16-a306-0838f50d47a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lines\Curves">
+      <UniqueIdentifier>{83145641-c7b8-44e3-9656-81f59fb37d60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lines\Curves\Bezier">
+      <UniqueIdentifier>{2fe63173-e0a8-4442-966b-4ea74edde48b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lines\Curves\Bezier\Cubic">
+      <UniqueIdentifier>{de742b6b-8e18-4f91-9980-cd85dcd77547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lines\Curves\Bezier\Quadratic">
+      <UniqueIdentifier>{8f8d9da3-5986-45d6-a601-36df1355fc57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lines\Curves">
+      <UniqueIdentifier>{9c7d712d-0554-4c42-9b44-6abe079a9cac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lines\Curves\Bezier">
+      <UniqueIdentifier>{458d4931-9b92-4ff3-b2fd-05a93c85e1d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lines\Curves\Bezier\Cubic">
+      <UniqueIdentifier>{4f4eab4d-f711-4ed1-9d08-d3dbcc2d84e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lines\Curves\Bezier\Quadratic">
+      <UniqueIdentifier>{4be48a83-0f77-4bcd-8ea8-fec921af2ba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Volumes\Capsule">
+      <UniqueIdentifier>{3dddb79b-4947-466f-adfa-c771e0acc055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Volumes\Capsule">
+      <UniqueIdentifier>{e1ec7fea-9a26-4de6-b4a7-901abdda72fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Volumes\OrientedBoundingBox">
+      <UniqueIdentifier>{4f580ebf-a195-4346-9504-a27972d4a65b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Volumes\OrientedBoundingBox">
+      <UniqueIdentifier>{150f478c-e37a-44b6-9986-6a81629643f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Range">
+      <UniqueIdentifier>{a7dd4160-1845-41ac-b3a7-ca6260073afb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Range">
+      <UniqueIdentifier>{2c75bddb-e528-416b-aad5-1b8907a390b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Quaternion">
+      <UniqueIdentifier>{725a3c73-293e-457a-a687-3992c3565451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Quaternion">
+      <UniqueIdentifier>{e2f406db-6ad3-428a-aed6-89dc75a337ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lines\Curves\Bezier\Spline">
+      <UniqueIdentifier>{e5e5b216-7639-4e98-a182-d8182282cc3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lines\Curves\Bezier\Spline">
+      <UniqueIdentifier>{dbe433c3-a3ec-4f16-b95b-d862ac051947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lines\Curves\Hermite">
+      <UniqueIdentifier>{86d2ed4f-1e9e-48d6-9d43-22a68a064347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lines\Curves\Hermite">
+      <UniqueIdentifier>{ad40d331-5fb8-4d5d-ae47-6521f42cdb9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lines\Curves\Hermite\Cubic">
+      <UniqueIdentifier>{281b1ccd-e52e-4234-9808-d452d67ca661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lines\Curves\Hermite\Cubic">
+      <UniqueIdentifier>{a8439a0d-9971-4af2-b2f8-c46837f9bae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Int">
+      <UniqueIdentifier>{ef584a12-1560-44f1-bc68-db73e0dc7740}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Uint">
+      <UniqueIdentifier>{4060a821-5bd0-419e-9134-7fa60c2890f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Int">
+      <UniqueIdentifier>{15a0b090-e466-4a31-b79a-18d9c542f2d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Uint">
+      <UniqueIdentifier>{7af8bc0c-42d5-454b-9863-99f765e486b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Volumes\Cylinder">
+      <UniqueIdentifier>{33dcd4da-814b-4156-adc9-dd662a984558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Volumes\Cylinder">
+      <UniqueIdentifier>{bf1b3df3-55f3-4b03-a555-f31ed7b5c071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Surfaces\Plane">
+      <UniqueIdentifier>{a3a5e6ce-7bad-4900-b53f-dfa4f361c3ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Surfaces\Plane">
+      <UniqueIdentifier>{6008c79d-590f-473e-892b-804dcac4b45d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Surfaces\Disk">
+      <UniqueIdentifier>{8c1fe713-e916-4f00-8bc7-a6505769ff66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Surfaces\Quad">
+      <UniqueIdentifier>{70b48411-4dfb-4577-ba39-216f02d38666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Surfaces\Disk">
+      <UniqueIdentifier>{3472a827-8b94-4fc9-b125-4df71563d02d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Surfaces\Quad">
+      <UniqueIdentifier>{c08b2c6b-df6d-4ff3-9b6c-29d7ed1c5470}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Volumes\Cone">
+      <UniqueIdentifier>{f98aa4e8-2a0f-448c-ab18-8ab6db2bc204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Volumes\Cone">
+      <UniqueIdentifier>{ee42733b-1154-4560-9d03-e208638927e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Volumes\Frustum">
+      <UniqueIdentifier>{9099ac84-936b-4486-b56a-7f7f21b2338d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Volumes\Frustum">
+      <UniqueIdentifier>{ef32fae4-d80b-4b59-b44f-b8d0ed4ba1b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Surfaces\Bezier">
+      <UniqueIdentifier>{79e9bca9-9c43-4f9b-8207-9d382e326030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Surfaces\Bezier">
+      <UniqueIdentifier>{1321e988-edd4-49a2-bd28-433145071de5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Surfaces\Bezier\Patches">
+      <UniqueIdentifier>{bf6294ee-1496-43bd-ab73-280d75ba2040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Surfaces\Bezier\Triangles">
+      <UniqueIdentifier>{8fa4c34b-a27e-4da7-ba32-e2bf51c42c23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Surfaces\Bezier\Patches">
+      <UniqueIdentifier>{e56ec964-08fb-4a6c-b1f9-36d8f32822f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Surfaces\Bezier\Triangles">
+      <UniqueIdentifier>{7079d241-b52b-460c-82bc-66478f6ec828}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Public\MathCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\BitManipulation\BitFlags.h">
+      <Filter>Header Files\Bit Manipulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\BitManipulation\BitManipulation.h">
+      <Filter>Header Files\Bit Manipulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\BitManipulation\BitMask.h">
+      <Filter>Header Files\Bit Manipulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Matrix\Matrix2x2.h">
+      <Filter>Header Files\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Matrix\Matrix3x3.h">
+      <Filter>Header Files\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Matrix\Matrix4x4.h">
+      <Filter>Header Files\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Ray\Ray2D.h">
+      <Filter>Header Files\Rays</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Ray\Ray3D.h">
+      <Filter>Header Files\Rays</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Vector\Vector2.h">
+      <Filter>Header Files\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Vector\Vector3.h">
+      <Filter>Header Files\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Vector\Vector4.h">
+      <Filter>Header Files\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Hashing\Hashing.h">
+      <Filter>Header Files\Hashing</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Volumes\AxisAlignedBoundingBox\AxisAlignedBoundingBox2D.h">
+      <Filter>Header Files\Volumes\AxisAlignedBoundingBox</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Volumes\AxisAlignedBoundingBox\AxisAlignedBoundingBox3D.h">
+      <Filter>Header Files\Volumes\AxisAlignedBoundingBox</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Volumes\Sphere\Sphere2D.h">
+      <Filter>Header Files\Volumes\Sphere</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Volumes\Sphere\Sphere3D.h">
+      <Filter>Header Files\Volumes\Sphere</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Operations\Clamp.h">
+      <Filter>Header Files\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Operations\Interpolation.h">
+      <Filter>Header Files\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Operations\Remap.h">
+      <Filter>Header Files\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Operations\Rounding.h">
+      <Filter>Header Files\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Transform\Transform.h">
+      <Filter>Header Files\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Transform\Transform4.h">
+      <Filter>Header Files\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Surfaces\Triangles\Triangle3D.h">
+      <Filter>Header Files\Surfaces\Triangles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Surfaces\Triangles\Triangle2D.h">
+      <Filter>Header Files\Surfaces\Triangles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Lines\Line2D.h">
+      <Filter>Header Files\Lines</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Lines\Line3D.h">
+      <Filter>Header Files\Lines</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Operations\Barycentric.h">
+      <Filter>Header Files\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\MathConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Operations\Distance.h">
+      <Filter>Header Files\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Operations\MinMax.h">
+      <Filter>Header Files\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Operations\Saturate.h">
+      <Filter>Header Files\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Operations\Quadratic.h">
+      <Filter>Header Files\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Matrix\Matrix.h">
+      <Filter>Header Files\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Volumes\Capsule\Capsule3D.h">
+      <Filter>Header Files\Volumes\Capsule</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Volumes\OrientedBoundingBox\OrientedBoundingBox3D.h">
+      <Filter>Header Files\Volumes\OrientedBoundingBox</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Operations\Intersection.h">
+      <Filter>Header Files\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Operations\Pythagorean.h">
+      <Filter>Header Files\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Volumes\Capsule\Capsule2D.h">
+      <Filter>Header Files\Volumes\Capsule</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Volumes\OrientedBoundingBox\OrientedBoundingBox2D.h">
+      <Filter>Header Files\Volumes\OrientedBoundingBox</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Matrix\Matrix3x4.h">
+      <Filter>Header Files\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Operations\Floating.h">
+      <Filter>Header Files\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Range\Range.h">
+      <Filter>Header Files\Range</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Quaternion\Quaternion.h">
+      <Filter>Header Files\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Operations\Colinear.h">
+      <Filter>Header Files\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Cubic\CubicBezier2D.h">
+      <Filter>Header Files\Lines\Curves\Bezier\Cubic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Cubic\CubicBezier3D.h">
+      <Filter>Header Files\Lines\Curves\Bezier\Cubic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Quadratic\QuadraticBezier2D.h">
+      <Filter>Header Files\Lines\Curves\Bezier\Quadratic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Quadratic\QuadraticBezier3D.h">
+      <Filter>Header Files\Lines\Curves\Bezier\Quadratic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Spline\Spline2D.h">
+      <Filter>Header Files\Lines\Curves\Bezier\Spline</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Spline\Spline3D.h">
+      <Filter>Header Files\Lines\Curves\Bezier\Spline</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Lines\Curves\Hermite\Cubic\CubicHermite2D.h">
+      <Filter>Header Files\Lines\Curves\Hermite\Cubic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Lines\Curves\Hermite\Cubic\CubicHermite3D.h">
+      <Filter>Header Files\Lines\Curves\Hermite\Cubic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Cubic\CubicBezierUtils.h">
+      <Filter>Header Files\Lines\Curves\Bezier\Cubic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Lines\Curves\Bezier\Quadratic\QuadraticBezierUtils.h">
+      <Filter>Header Files\Lines\Curves\Bezier\Quadratic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Lines\Curves\Hermite\Cubic\CubicHermiteUtils.h">
+      <Filter>Header Files\Lines\Curves\Hermite\Cubic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Quaternion\DualQuaternion.h">
+      <Filter>Header Files\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Int\Int2.h">
+      <Filter>Header Files\Int</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Uint\Uint2.h">
+      <Filter>Header Files\Uint</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Uint\Uint3.h">
+      <Filter>Header Files\Uint</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Uint\Uint4.h">
+      <Filter>Header Files\Uint</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Int\Int3.h">
+      <Filter>Header Files\Int</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Int\Int4.h">
+      <Filter>Header Files\Int</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Volumes\Cylinder\Cylinder.h">
+      <Filter>Header Files\Volumes\Cylinder</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Surfaces\Plane\Plane.h">
+      <Filter>Header Files\Surfaces\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Surfaces\Disk\Disk.h">
+      <Filter>Header Files\Surfaces\Disk</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Volumes\Cone\Cone.h">
+      <Filter>Header Files\Volumes\Cone</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Volumes\Frustum\Frustum.h">
+      <Filter>Header Files\Volumes\Frustum</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Surfaces\Bezier\Triangles\QuadraticBezierTriangle.h">
+      <Filter>Header Files\Surfaces\Bezier\Triangles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Surfaces\Bezier\Patches\CubicBezierPatch.h">
+      <Filter>Header Files\Surfaces\Bezier\Patches</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Private\Matrix\Matrix2x2.cpp">
+      <Filter>Source Files\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Matrix\Matrix3x3.cpp">
+      <Filter>Source Files\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Matrix\Matrix4x4.cpp">
+      <Filter>Source Files\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Ray\Ray2D.cpp">
+      <Filter>Source Files\Rays</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Ray\Ray3D.cpp">
+      <Filter>Source Files\Rays</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Vector\Vector2.cpp">
+      <Filter>Source Files\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Vector\Vector3.cpp">
+      <Filter>Source Files\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Vector\Vector4.cpp">
+      <Filter>Source Files\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Hashing\Hashing.cpp">
+      <Filter>Source Files\Hashing</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Volumes\AxisAlignedBoundingBox\AxisAlignedBoundingBox2D.cpp">
+      <Filter>Source Files\Volumes\AxisAlignedBoundingBox</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Volumes\AxisAlignedBoundingBox\AxisAlignedBoundingBox3D.cpp">
+      <Filter>Source Files\Volumes\AxisAlignedBoundingBox</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Volumes\Sphere\Sphere2D.cpp">
+      <Filter>Source Files\Volumes\Sphere</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Volumes\Sphere\Sphere3D.cpp">
+      <Filter>Source Files\Volumes\Sphere</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Operations\Clamp.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Operations\Interpolation.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Operations\Remap.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Operations\Rounding.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Transform\Transform.cpp">
+      <Filter>Source Files\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Transform\Transform4.cpp">
+      <Filter>Source Files\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Surfaces\Triangles\Triangle3D.cpp">
+      <Filter>Source Files\Surfaces\Triangles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Surfaces\Triangles\Triangle2D.cpp">
+      <Filter>Source Files\Surfaces\Triangles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Lines\Line2D.cpp">
+      <Filter>Source Files\Lines</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Lines\Line3D.cpp">
+      <Filter>Source Files\Lines</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Operations\Barycentric.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Operations\Distance.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Operations\MinMax.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Operations\Saturate.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Operations\Quadratic.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Matrix\Matrix.cpp">
+      <Filter>Source Files\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Volumes\Capsule\Capsule3D.cpp">
+      <Filter>Source Files\Volumes\Capsule</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Volumes\OrientedBoundingBox\OrientedBoundingBox3D.cpp">
+      <Filter>Source Files\Volumes\OrientedBoundingBox</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Operations\Intersection.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Operations\Pythagorean.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Volumes\Capsule\Capsule2D.cpp">
+      <Filter>Source Files\Volumes\Capsule</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Volumes\OrientedBoundingBox\OrientedBoundingBox2D.cpp">
+      <Filter>Source Files\Volumes\OrientedBoundingBox</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Matrix\Matrix3x4.cpp">
+      <Filter>Source Files\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Operations\Floating.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Range\Range.cpp">
+      <Filter>Source Files\Range</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Quaternion\Quaternion.cpp">
+      <Filter>Source Files\Quaternion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Operations\Colinear.cpp">
+      <Filter>Source Files\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Lines\Curves\Bezier\Cubic\CubicBezier2D.cpp">
+      <Filter>Source Files\Lines\Curves\Bezier\Cubic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Lines\Curves\Bezier\Cubic\CubicBezier3D.cpp">
+      <Filter>Source Files\Lines\Curves\Bezier\Cubic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Lines\Curves\Bezier\Quadratic\QuadraticBezier2D.cpp">
+      <Filter>Source Files\Lines\Curves\Bezier\Quadratic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Lines\Curves\Bezier\Quadratic\QuadraticBezier3D.cpp">
+      <Filter>Source Files\Lines\Curves\Bezier\Quadratic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Lines\Curves\Bezier\Splines\Spline2D.cpp">
+      <Filter>Source Files\Lines\Curves\Bezier\Spline</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Lines\Curves\Bezier\Splines\Spline3D.cpp">
+      <Filter>Source Files\Lines\Curves\Bezier\Spline</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Lines\Curves\Hermite\Cubic\CubicHermite2D.cpp">
+      <Filter>Source Files\Lines\Curves\Hermite\Cubic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Lines\Curves\Hermite\Cubic\CubicHermite3D.cpp">
+      <Filter>Source Files\Lines\Curves\Hermite\Cubic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Quaternion\DualQuaternion.cpp">
+      <Filter>Source Files\Quaternion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Int\Int2.cpp">
+      <Filter>Source Files\Int</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Uint\Uint2.cpp">
+      <Filter>Source Files\Uint</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Uint\Uint3.cpp">
+      <Filter>Source Files\Uint</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Uint\Uint4.cpp">
+      <Filter>Source Files\Uint</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Int\Int3.cpp">
+      <Filter>Source Files\Int</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Int\Int4.cpp">
+      <Filter>Source Files\Int</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Volumes\Cylinder\Cylinder.cpp">
+      <Filter>Source Files\Volumes\Cylinder</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Surfaces\Plane\Plane.cpp">
+      <Filter>Source Files\Surfaces\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Surfaces\Disk\Disk.cpp">
+      <Filter>Source Files\Surfaces\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Volumes\Cone\Cone.cpp">
+      <Filter>Source Files\Volumes\Cone</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Volumes\Frustum\Frustum.cpp">
+      <Filter>Source Files\Volumes\Frustum</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Surfaces\Bezier\Triangles\QuadraticBezierTriangle.cpp">
+      <Filter>Source Files\Surfaces\Bezier\Triangles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Surfaces\Bezier\Patches\CubicBezierPatch.cpp">
+      <Filter>Source Files\Surfaces\Bezier\Patches</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
