@@ -5,7 +5,7 @@
 namespace Memory
 {
 	class Heap;
-};
+}
 
 #if MEMORY_CUSTOM_NEW
 
@@ -35,18 +35,7 @@ namespace Memory
 		object->~T();
 		Memory::CustomDelete(reinterpret_cast<void*>(object));
 	}
-
-	//MEMORY_USAGE void operator delete[](void* memory);
-
-
-	//#define SkyfallCustomNew(y, x, ...) ::new (::operator new(sizeof(x), y) ) x(__VA_ARGS__)
-	//template<typename T>
-	//void* Allocate<T>(size_t allocationSize, const char* heapName)
-	//{
-	//	return sizeof(T), heapName;
-	//}
-
-};
+}
 
 #if OVERRIDE_NEW
 

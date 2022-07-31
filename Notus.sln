@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemoryLibrary", "Libraries\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StringHashLibrary", "Libraries\Systems\StringHashLibrary\StringHashLibrary.vcxproj", "{40AC1FC2-D71B-4C73-80C5-41D7C38E1DD2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTTISystem", "Libraries\Systems\RTTISystem\RTTISystem.vcxproj", "{7450AB81-E48A-4EA7-B6CB-346D8111DDA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -79,6 +81,10 @@ Global
 		{40AC1FC2-D71B-4C73-80C5-41D7C38E1DD2}.Debug|x64.Build.0 = Debug|x64
 		{40AC1FC2-D71B-4C73-80C5-41D7C38E1DD2}.Release|x64.ActiveCfg = Release|x64
 		{40AC1FC2-D71B-4C73-80C5-41D7C38E1DD2}.Release|x64.Build.0 = Release|x64
+		{7450AB81-E48A-4EA7-B6CB-346D8111DDA8}.Debug|x64.ActiveCfg = Release|x64
+		{7450AB81-E48A-4EA7-B6CB-346D8111DDA8}.Debug|x64.Build.0 = Release|x64
+		{7450AB81-E48A-4EA7-B6CB-346D8111DDA8}.Release|x64.ActiveCfg = Release|x64
+		{7450AB81-E48A-4EA7-B6CB-346D8111DDA8}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +106,7 @@ Global
 		{D2D7A34B-DC29-4166-9075-8073047290C2} = {B0947577-128C-448E-9B40-6B8904FE1F8A}
 		{912EEF20-8C48-4808-AE1C-B9582226881D} = {4038BDFE-D38A-44E7-BA5E-9DEBA92BD827}
 		{40AC1FC2-D71B-4C73-80C5-41D7C38E1DD2} = {98080893-51CF-4056-8E00-6957065E14CB}
+		{7450AB81-E48A-4EA7-B6CB-346D8111DDA8} = {98080893-51CF-4056-8E00-6957065E14CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {58EC826A-F44B-4EAE-BAC7-7E26FB80BFFF}
