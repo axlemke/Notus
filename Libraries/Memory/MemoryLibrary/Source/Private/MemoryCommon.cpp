@@ -6,7 +6,7 @@
 //
 //using namespace Memory;
 //
-//#if SKYFALL_CUSTOM_NEW
+//#if MEMORY_CUSTOM_NEW
 //
 //#pragma region CustomNew
 //
@@ -85,5 +85,5 @@
 //
 //#pragma endregion CustomDelete
 //
-//#endif // SKYFALL_CUSTOM_NEW
+//#endif // MEMORY_CUSTOM_NEW
 //

@@ -15,7 +15,7 @@
 #endif
 
 
-#define SKYFALL_CUSTOM_NEW 1
+#define MEMORY_CUSTOM_NEW 1
 #define SUPPORTS_ALLOCATION_TYPENAME 1
 
 

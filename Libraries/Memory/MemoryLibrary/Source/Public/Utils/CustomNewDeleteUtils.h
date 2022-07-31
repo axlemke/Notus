@@ -7,7 +7,7 @@ namespace Memory
 	class Heap;
 };
 
-#if SKYFALL_CUSTOM_NEW
+#if MEMORY_CUSTOM_NEW
 
 namespace Memory
 {
@@ -175,4 +175,4 @@ inline void operator delete[](void* memory)
 #define HaveBlueNewArray(type, elementCount, heap) new type[elementCount]
 #define HaveBlueDeleteArray(object) delete[](object); object = nullptr
 
-#endif // SKYFALL_CUSTOM_NEW
+#endif // MEMORY_CUSTOM_NEW
