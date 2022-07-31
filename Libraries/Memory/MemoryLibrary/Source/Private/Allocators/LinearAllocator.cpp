@@ -18,9 +18,14 @@ LinearAllocator::~LinearAllocator()
 {
 }
 
+bool LinearAllocator::CanAllocate(unsigned long allocationSize) const
+{
+	return ((m_currentOffset + allocationSize) < m_maxSize);
+}
+
 unsigned int* LinearAllocator::Allocate(unsigned long allocationSize)
 {
-	if ((m_currentOffset + allocationSize) < m_maxSize)
+	if (CanAllocate(allocationSize))
 	{
 		unsigned int* returnValue = m_data + m_currentOffset;
 

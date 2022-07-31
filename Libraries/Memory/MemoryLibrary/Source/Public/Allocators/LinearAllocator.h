@@ -9,6 +9,7 @@ public:
 	MEMORY_USAGE LinearAllocator(unsigned int* data, unsigned long size);
 	MEMORY_USAGE ~LinearAllocator();
 
+	MEMORY_USAGE bool CanAllocate(unsigned long allocationSize) const;
 	MEMORY_USAGE unsigned int* Allocate(unsigned long allocationSize);
 	MEMORY_USAGE void Reset();
 
