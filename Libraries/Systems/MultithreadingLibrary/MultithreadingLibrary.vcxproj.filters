@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{b6f679cb-ee0a-4fbd-813b-516f67bd8d08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{305c7eb5-a56f-4677-83b0-bdb660e4ba98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Jobs">
+      <UniqueIdentifier>{77d8dd4e-87e4-4ccc-b0b5-533ca57f5e7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Jobs">
+      <UniqueIdentifier>{f556babe-8588-4c46-b132-607ed76546ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Threads">
+      <UniqueIdentifier>{90f2937b-07f3-45d0-a19d-c5a36f070d22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Threads">
+      <UniqueIdentifier>{205f4f2c-5029-4a00-99df-8f47aa65d94e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Public\MultithreadingCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Benaphore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Spinlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\ReadWriteSpinlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Utils\CoreUtils.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Jobs\JobManager.h">
+      <Filter>Header Files\Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Jobs\JobDispatchArguments.h">
+      <Filter>Header Files\Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Jobs\Job.h">
+      <Filter>Header Files\Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Jobs\JobThread.h">
+      <Filter>Header Files\Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Threads\ThreadGuard.h">
+      <Filter>Header Files\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Jobs\JobMatrix.h">
+      <Filter>Header Files\Jobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Jobs\JobPriority.h">
+      <Filter>Header Files\Jobs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Private\Benaphore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Spinlock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\ReadWriteSpinlock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Utils\CoreUtils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Jobs\JobManager.cpp">
+      <Filter>Source Files\Jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Jobs\Job.cpp">
+      <Filter>Source Files\Jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Jobs\JobThread.cpp">
+      <Filter>Source Files\Jobs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Threads\ThreadGuard.cpp">
+      <Filter>Source Files\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Jobs\JobMatrix.cpp">
+      <Filter>Source Files\Jobs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
