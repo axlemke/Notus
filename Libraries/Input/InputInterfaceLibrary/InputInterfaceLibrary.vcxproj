@@ -18,7 +18,7 @@
     <ClInclude Include="Source\Public\InputInterfaceCommon.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Private\Devices\DeviceInterfaces.cpp" />
+    <ClCompile Include="Source\Private\Devices\DeviceInterface.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DCF38E83-A8C3-4A71-A59F-CF258FB72AB4}</ProjectGuid>

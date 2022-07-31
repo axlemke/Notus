@@ -38,7 +38,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Private\Devices\DeviceInterfaces.cpp">
+    <ClCompile Include="Source\Private\Devices\DeviceInterface.cpp">
       <Filter>Source Files\Devices</Filter>
     </ClCompile>
   </ItemGroup>
