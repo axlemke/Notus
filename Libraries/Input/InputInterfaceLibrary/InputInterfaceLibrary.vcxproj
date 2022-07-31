@@ -24,6 +24,14 @@
   <ItemGroup>
     <ClCompile Include="Source\Private\Devices\DeviceInterface.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\LibraryShell\LibraryShell.vcxproj">
+      <Project>{88a09185-508f-49e8-a204-32e36759031d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Math\MathLibrary\MathLibrary.vcxproj">
+      <Project>{d2d7a34b-dc29-4166-9075-8073047290c2}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DCF38E83-A8C3-4A71-A59F-CF258FB72AB4}</ProjectGuid>
     <RootNamespace>LibraryShell</RootNamespace>
