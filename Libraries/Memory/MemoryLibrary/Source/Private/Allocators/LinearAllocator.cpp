@@ -1,5 +1,7 @@
 #include "Allocators/LinearAllocator.h"
 
+using namespace Memory;
+
 LinearAllocator::LinearAllocator()
 	: m_data(nullptr)
 	, m_currentOffset(0)

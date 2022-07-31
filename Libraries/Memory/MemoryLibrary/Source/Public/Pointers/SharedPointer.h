@@ -75,16 +75,6 @@ namespace Memory
 			return m_data;
 		}
 
-		//TemplatedClass** operator&() throw()
-		//{
-		//	return &mData;
-		//}
-
-		//const TemplatedClass** operator&() const throw()
-		//{
-		//	return &mData;
-		//}
-
 		bool IsValid() const
 		{
 			if (m_data)
@@ -210,7 +200,6 @@ namespace Memory
 	protected:
 		void CreateReferenceCounter()
 		{
-			//HB_ASSERT(m_data != nullptr);
 			if (m_data != nullptr)
 			{
 				if (m_referenceCounter == nullptr)
@@ -236,5 +225,3 @@ namespace Memory
 		ReferenceCounter* m_referenceCounter;
 	};
 }
-
-#define SkyfallAssetDelete(x) x.Release();

@@ -3,37 +3,40 @@
 #include "Allocators/LinearAllocator.h"
 #include "MemoryCommon.h"
 
-template<typename TemplatedDataType>
-class TypedLinearAllocator : public LinearAllocator
+namespace Memory
 {
-public:
-	TemplatedDataType* Allocate()
+	template<typename TemplatedDataType>
+	class TypedLinearAllocator : public LinearAllocator
 	{
-		unsigned int* data = Allocate(sizeof(TemplatedDataType));
-		if (data)
+	public:
+		TemplatedDataType* Allocate()
 		{
-			return reinterpret_cast<TemplatedDataType*>(data);
+			unsigned int* data = Allocate(sizeof(TemplatedDataType));
+			if (data)
+			{
+				return reinterpret_cast<TemplatedDataType*>(data);
+			}
+			return nullptr;
 		}
-		return nullptr;
-	}
 
-	TemplatedDataType* AllocateArray(unsigned long numberOfElements)
-	{
-		unsigned int* data = Allocate(sizeof(TemplatedDataType) * numberOfElements);
-		if (data)
+		TemplatedDataType* AllocateArray(unsigned long numberOfElements)
 		{
-			return reinterpret_cast<TemplatedDataType*>(data);
+			unsigned int* data = Allocate(sizeof(TemplatedDataType) * numberOfElements);
+			if (data)
+			{
+				return reinterpret_cast<TemplatedDataType*>(data);
+			}
+			return nullptr;
 		}
-		return nullptr;
-	}
 
-	TemplatedDataType* GetData()
-	{
-		return reinterpret_cast<TemplatedDataType*>(m_data);
-	}
+		TemplatedDataType* GetData()
+		{
+			return reinterpret_cast<TemplatedDataType*>(m_data);
+		}
 
-	const TemplatedDataType* GetData() const
-	{
-		return reinterpret_cast<const TemplatedDataType*>(m_data);
-	}
-};
+		const TemplatedDataType* GetData() const
+		{
+			return reinterpret_cast<const TemplatedDataType*>(m_data);
+		}
+	};
+}

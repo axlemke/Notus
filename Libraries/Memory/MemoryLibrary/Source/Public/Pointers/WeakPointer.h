@@ -43,10 +43,6 @@ namespace Memory
 			return *this;
 		}
 
-		// Don't want these!
-		//UniquePointer(UniquePointer const&) = delete;
-		//UniquePointer& operator=(UniquePointer const&) = delete;
-
 		TemplatedClass& operator*()
 		{
 			return *m_data;
@@ -66,16 +62,6 @@ namespace Memory
 		{
 			return m_data;
 		}
-
-		//TemplatedClass** operator&() throw()
-		//{
-		//	return &mData;
-		//}
-
-		//const TemplatedClass** operator&() const throw()
-		//{
-		//	return &mData;
-		//}
 
 		bool IsValid()
 		{
@@ -108,30 +94,6 @@ namespace Memory
 			return castedUniquePointer;
 		}
 
-		//bool operator==(UniquePointer<TemplatedClass> rhs)
-		//{
-		//	return ((m_data) && (rhs.mData) && (m_data == rhs.mData));
-		//}
-
-		//bool operator!=(UniquePointer<TemplatedClass> rhs)
-		//{
-		//	return !operator==(rhs);
-		//}
-
-		//bool operator==(TemplatedClass* rhs)
-		//{
-		//	if (m_data == rhs)
-		//	{
-		//		return true;
-		//	}
-		//	return false;
-		//}
-
-		//bool operator!=(TemplatedClass* rhs)
-		//{
-		//	return !operator==(rhs);
-		//}
-
 		void Release()
 		{
 			m_data = nullptr;
@@ -140,4 +102,4 @@ namespace Memory
 	protected:
 		TemplatedClass* m_data;
 	};
-};
+}

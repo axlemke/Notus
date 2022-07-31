@@ -149,4 +149,4 @@ namespace Memory
 	protected:
 		TemplatedClass* m_data;
 	};
-};
+}
