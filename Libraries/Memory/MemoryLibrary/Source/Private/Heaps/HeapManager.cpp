@@ -4,7 +4,7 @@
 #include "Heaps/FixedHeap.h"
 #include "Heaps/Heap.h"
 
-using namespace MemorySystem;
+using namespace Memory;
 
 Heap HeapManager::s_heaps[];
 Heap* HeapManager::s_defaultHeap = nullptr;

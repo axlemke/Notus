@@ -6,7 +6,7 @@ typedef unsigned __int64    UINT64;
 #define SUPPORT_ALLOCATION_NAME 1
 
 
-namespace MemorySystem
+namespace Memory
 {
 	class Heap;
 

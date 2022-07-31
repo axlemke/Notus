@@ -2,9 +2,9 @@
 
 #include "Libraries/Framework/LibraryShell/Source/Public/CustomAssert.h"
 
-using namespace MemorySystem;
+using namespace Memory;
 
-void MemorySystem::Memcpy(void* destination, const void* source, unsigned long size)
+void Memory::Memcpy(void* destination, const void* source, unsigned long size)
 {
 #if 0
 	char* charDestination = reinterpret_cast<char*>(destination);
@@ -20,7 +20,7 @@ void MemorySystem::Memcpy(void* destination, const void* source, unsigned long s
 #endif
 }
 
-void MemorySystem::Memmove(void* destination, const void* source, unsigned long size)
+void Memory::Memmove(void* destination, const void* source, unsigned long size)
 {
 #if 0
 	char* charDestination = reinterpret_cast<char*>(destination);
@@ -31,7 +31,7 @@ void MemorySystem::Memmove(void* destination, const void* source, unsigned long 
 #endif
 }
 
-void MemorySystem::Memset(void* destination, int value, unsigned long size)
+void Memory::Memset(void* destination, int value, unsigned long size)
 {
 #if 0
 #else
@@ -39,7 +39,7 @@ void MemorySystem::Memset(void* destination, int value, unsigned long size)
 #endif
 }
 
-int MemorySystem::Memcmp(const void* pointerA, const void* pointerB, unsigned long size)
+int Memory::Memcmp(const void* pointerA, const void* pointerB, unsigned long size)
 {
 #if 0
 #else

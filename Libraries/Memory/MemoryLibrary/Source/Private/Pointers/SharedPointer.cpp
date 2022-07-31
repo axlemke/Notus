@@ -1,6 +1,6 @@
 #include "Pointers/SharedPointer.h"
 
-using namespace MemorySystem;
+using namespace Memory;
 
 ReferenceCounter::ReferenceCounter()
 	: m_count(0)

@@ -6,7 +6,7 @@
 
 #include <cstddef>
 
-using namespace MemorySystem;
+using namespace Memory;
 
 constexpr UINT64 k_defaultFixedHeapMaxSize = 1024;
 

@@ -6,7 +6,7 @@
 
 #include <cstddef>
 
-using namespace MemorySystem;
+using namespace Memory;
 
 Heap::Heap()
 	: HeapInterface()

@@ -4,15 +4,15 @@
 #include <algorithm>
 #include <cstring>
 
-using namespace MemorySystem;
+using namespace Memory;
 
-const AllocationHeader* MemorySystem::OffsetToAllocationHeader(const void* memory)
+const AllocationHeader* Memory::OffsetToAllocationHeader(const void* memory)
 {
 	// Need to back up to the allocation header
 	return reinterpret_cast<const AllocationHeader*>(static_cast<const char*>(memory) - sizeof(AllocationHeader));
 }
 
-AllocationHeader* MemorySystem::OffsetToAllocationHeader(void* memory)
+AllocationHeader* Memory::OffsetToAllocationHeader(void* memory)
 {
 	// Need to back up to the allocation header
 	return reinterpret_cast<AllocationHeader*>(static_cast<char*>(memory) - sizeof(AllocationHeader));
@@ -58,7 +58,7 @@ void AllocationHeader::SetAllocationTypeName(const char* allocationName)
 	{
 		size_t allocationNameLength = std::strlen(allocationName);
 		size_t size = std::min<size_t>(static_cast<const size_t>(k_maxTypeNameLength - 1), allocationNameLength);
-		MemorySystem::Memcpy(m_typeName, allocationName, size);
+		Memory::Memcpy(m_typeName, allocationName, size);
 		m_typeName[allocationNameLength] = '\0';
 	}
 #endif

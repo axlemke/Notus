@@ -2,7 +2,7 @@
 
 #include <wrl/client.h>
 
-namespace MemorySystem
+namespace Memory
 {
 	template<typename TemplatedClass>
 	using ComPtr = Microsoft::WRL::ComPtr<TemplatedClass>;

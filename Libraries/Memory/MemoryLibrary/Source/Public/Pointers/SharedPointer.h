@@ -3,7 +3,7 @@
 #include "MemoryCommon.h"
 #include "Libraries/Framework/LibraryShell/Source/Public/CustomAssert.h"
 
-namespace MemorySystem
+namespace Memory
 {
 	class ReferenceCounter
 	{

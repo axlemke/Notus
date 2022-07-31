@@ -2,38 +2,38 @@
 
 #include "MemoryCommon.h"
 
-namespace MemorySystem
+namespace Memory
 {
 	class Heap;
 };
 
 #if SKYFALL_CUSTOM_NEW
 
-namespace MemorySystem
+namespace Memory
 {
 	MEMORY_USAGE void* CustomNew(size_t allocationSize, const char* heapName, const char* allocationName);
 	MEMORY_USAGE void* CustomNew(size_t allocationSize, const char* heapName);
-	MEMORY_USAGE void* CustomNew(size_t allocationSize, MemorySystem::Heap* heap, const char* allocationName);
-	MEMORY_USAGE void* CustomNew(size_t allocationSize, MemorySystem::Heap* heap);
+	MEMORY_USAGE void* CustomNew(size_t allocationSize, Memory::Heap* heap, const char* allocationName);
+	MEMORY_USAGE void* CustomNew(size_t allocationSize, Memory::Heap* heap);
 	MEMORY_USAGE void* CustomNew(size_t allocationSize);
 
 	MEMORY_USAGE void CustomDelete(void* memory);
 	MEMORY_USAGE void CustomDelete(void* memory, const char* heapName);
-	MEMORY_USAGE void CustomDelete(void* memory, MemorySystem::Heap* heap);
+	MEMORY_USAGE void CustomDelete(void* memory, Memory::Heap* heap);
 
 	// In this case where the generic class type T is used as a parameter for CustomDeleteInPlace the compiler can automatically din out what data type it needs to instantiate for without having to explicitly specify it within angle brackets
 	template <class T>
-	void CustomDeleteInPlace(T* object, MemorySystem::Heap* heap)
+	void CustomDeleteInPlace(T* object, Memory::Heap* heap)
 	{
 		object->~T();
-		MemorySystem::CustomDelete(reinterpret_cast<void*>(object), heap);
+		Memory::CustomDelete(reinterpret_cast<void*>(object), heap);
 	}
 
 	template <class T>
 	void CustomDeleteInPlace(T* object)
 	{
 		object->~T();
-		MemorySystem::CustomDelete(reinterpret_cast<void*>(object));
+		Memory::CustomDelete(reinterpret_cast<void*>(object));
 	}
 
 	//MEMORY_USAGE void operator delete[](void* memory);
@@ -55,72 +55,72 @@ namespace MemorySystem
 
 inline void* operator new(size_t allocationSize, const char* heapName, const char* allocationName)
 {
-	return MemorySystem::CustomNew(allocationSize, heapName, allocationName);
+	return Memory::CustomNew(allocationSize, heapName, allocationName);
 }
 
 inline void* operator new(size_t allocationSize, const char* heapName)
 {
-	return MemorySystem::CustomNew(allocationSize, heapName);
+	return Memory::CustomNew(allocationSize, heapName);
 }
 
-inline void* operator new(size_t allocationSize, MemorySystem::Heap* heap, const char* allocationName)
+inline void* operator new(size_t allocationSize, Memory::Heap* heap, const char* allocationName)
 {
-	return MemorySystem::CustomNew(allocationSize, heap, allocationName);
+	return Memory::CustomNew(allocationSize, heap, allocationName);
 }
 
-inline void* operator new(size_t allocationSize, MemorySystem::Heap* heap)
+inline void* operator new(size_t allocationSize, Memory::Heap* heap)
 {
-	return MemorySystem::CustomNew(allocationSize, heap);
+	return Memory::CustomNew(allocationSize, heap);
 }
 
 inline void* operator new(size_t allocationSize)
 {
-	return MemorySystem::CustomNew(allocationSize);
+	return Memory::CustomNew(allocationSize);
 }
 
 inline void* operator new[](size_t allocationSize, const char* heapName, const char* allocationName)
 {
-	return MemorySystem::CustomNew(allocationSize, heapName, allocationName);
+	return Memory::CustomNew(allocationSize, heapName, allocationName);
 }
 
 inline void* operator new[](size_t allocationSize, const char* heapName)
 {
-	return MemorySystem::CustomNew(allocationSize, heapName);
+	return Memory::CustomNew(allocationSize, heapName);
 }
 
-inline void* operator new[](size_t allocationSize, MemorySystem::Heap* heap, const char* allocationName)
+inline void* operator new[](size_t allocationSize, Memory::Heap* heap, const char* allocationName)
 {
-	return MemorySystem::CustomNew(allocationSize, heap, allocationName);
+	return Memory::CustomNew(allocationSize, heap, allocationName);
 }
 
-inline void* operator new[](size_t allocationSize, MemorySystem::Heap* heap)
+inline void* operator new[](size_t allocationSize, Memory::Heap* heap)
 {
-	return MemorySystem::CustomNew(allocationSize, heap);
+	return Memory::CustomNew(allocationSize, heap);
 }
 
 inline void* operator new[](size_t allocationSize)
 {
-	return MemorySystem::CustomNew(allocationSize);
+	return Memory::CustomNew(allocationSize);
 }
 
 inline void operator delete(void* memory)
 {
-	return MemorySystem::CustomDelete(memory);
+	return Memory::CustomDelete(memory);
 }
 
 inline void operator delete(void* memory, const char* heapName)
 {
-	return MemorySystem::CustomDelete(memory, heapName);
+	return Memory::CustomDelete(memory, heapName);
 }
 
-inline void operator delete(void* memory, MemorySystem::Heap* heap)
+inline void operator delete(void* memory, Memory::Heap* heap)
 {
-	return MemorySystem::CustomDelete(memory, heap);
+	return Memory::CustomDelete(memory, heap);
 }
 
 inline void operator delete[](void* memory)
 {
-	return MemorySystem::CustomDelete(memory);
+	return Memory::CustomDelete(memory);
 }
 
 //#pragma warning restore C4595
@@ -151,15 +151,15 @@ inline void operator delete[](void* memory)
 #include "Utils/CustomNewDeleteUtils.h"
 
 #if SUPPORTS_ALLOCATION_TYPENAME
-#define HaveBlueNew(type, heap) ::new (MemorySystem::CustomNew(sizeof(type), heap, #type) )
-#define HaveBlueDelete(object) MemorySystem::CustomDeleteInPlace(object); object = nullptr
-#define HaveBlueNewArray(type, elementCount, heap) reinterpret_cast<type*>(MemorySystem::CustomNew(sizeof(type) * elementCount, heap, #type))
-#define HaveBlueDeleteArray(object) MemorySystem::CustomDelete(reinterpret_cast<void*>(object)); object = nullptr
+#define HaveBlueNew(type, heap) ::new (Memory::CustomNew(sizeof(type), heap, #type) )
+#define HaveBlueDelete(object) Memory::CustomDeleteInPlace(object); object = nullptr
+#define HaveBlueNewArray(type, elementCount, heap) reinterpret_cast<type*>(Memory::CustomNew(sizeof(type) * elementCount, heap, #type))
+#define HaveBlueDeleteArray(object) Memory::CustomDelete(reinterpret_cast<void*>(object)); object = nullptr
 #else
-#define HaveBlueNew(type, heap) ::new (MemorySystem::CustomNew(sizeof(type), heap) )
-#define HaveBlueDelete(object) object->~type(); MemorySystem::CustomDelete(reinterpret_cast<void*>(object)); object = nullptr
-#define HaveBlueNewArray(type, elementCount, heap) reinterpret_cast<type*>(MemorySystem::CustomNew(sizeof(type) * elementCount, heap))
-#define HaveBlueDeleteArray(object) MemorySystem::CustomDelete(reinterpret_cast<void*>(object)); object = nullptr
+#define HaveBlueNew(type, heap) ::new (Memory::CustomNew(sizeof(type), heap) )
+#define HaveBlueDelete(object) object->~type(); Memory::CustomDelete(reinterpret_cast<void*>(object)); object = nullptr
+#define HaveBlueNewArray(type, elementCount, heap) reinterpret_cast<type*>(Memory::CustomNew(sizeof(type) * elementCount, heap))
+#define HaveBlueDeleteArray(object) Memory::CustomDelete(reinterpret_cast<void*>(object)); object = nullptr
 #endif
 
 #endif

@@ -1,6 +1,6 @@
 #include "MemoryPool.h"
 
-using namespace MemorySystem;
+using namespace Memory;
 
 MemoryPool::MemoryPool(unsigned int poolSize)
 {

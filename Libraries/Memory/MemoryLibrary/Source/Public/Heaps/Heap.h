@@ -5,7 +5,7 @@
 
 #include "Heaps/HeapInterface.h"
 
-namespace MemorySystem
+namespace Memory
 { 
 	class AllocationHeader;
 

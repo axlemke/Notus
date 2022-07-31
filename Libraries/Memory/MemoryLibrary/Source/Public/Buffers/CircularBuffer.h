@@ -2,7 +2,7 @@
 
 #include "MemoryCommon.h"
 
-namespace MemorySystem
+namespace Memory
 {
 	class CircularBuffer
 	{

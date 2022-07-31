@@ -6,7 +6,7 @@
 
 #include <cstddef>
 
-using namespace MemorySystem;
+using namespace Memory;
 
 UINT64 HeapInterface::s_currentAllocationNumber = 0;
 

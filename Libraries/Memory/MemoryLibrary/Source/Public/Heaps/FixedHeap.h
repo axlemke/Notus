@@ -7,7 +7,7 @@
 #include <string>
 #include <vector>
 
-namespace MemorySystem
+namespace Memory
 {
 	class AllocationHeader;
 

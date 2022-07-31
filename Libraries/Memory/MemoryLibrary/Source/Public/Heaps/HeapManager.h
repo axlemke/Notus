@@ -5,7 +5,7 @@
 
 class StringId;
 
-namespace MemorySystem
+namespace Memory
 { 
 	class FixedHeap;
 	class Heap;

@@ -4,38 +4,38 @@
 //#include "Libraries/Framework/LibraryShell/Source/Public/CustomAssert.h"
 //#include <new>
 //
-//using namespace MemorySystem;
+//using namespace Memory;
 //
 //#if SKYFALL_CUSTOM_NEW
 //
 //#pragma region CustomNew
 //
-//void* MemorySystem::CustomNew(size_t allocationSize)
+//void* Memory::CustomNew(size_t allocationSize)
 //{
 //	return operator new(allocationSize, HeapManager::GetDefaultHeap());
 //}
 //
-//void* MemorySystem::CustomNew(size_t allocationSize, const char* heapName, const char* allocationName)
+//void* Memory::CustomNew(size_t allocationSize, const char* heapName, const char* allocationName)
 //{
-//	Heap* heap = MemorySystem::HeapManager::FindHeap(heapName);
+//	Heap* heap = Memory::HeapManager::FindHeap(heapName);
 //	if (!heap)
 //	{
-//		heap = MemorySystem::HeapManager::CreateHeap(heapName);
+//		heap = Memory::HeapManager::CreateHeap(heapName);
 //	}
-//	return MemorySystem::CustomNew(allocationSize, heap, allocationName);
+//	return Memory::CustomNew(allocationSize, heap, allocationName);
 //}
 //
-//void* MemorySystem::CustomNew(size_t allocationSize, const char* heapName)
+//void* Memory::CustomNew(size_t allocationSize, const char* heapName)
 //{
-//	Heap* heap = MemorySystem::HeapManager::FindHeap(heapName);
+//	Heap* heap = Memory::HeapManager::FindHeap(heapName);
 //	if (!heap)
 //	{
-//		heap = MemorySystem::HeapManager::CreateHeap(heapName);
+//		heap = Memory::HeapManager::CreateHeap(heapName);
 //	}
-//	return MemorySystem::CustomNew(allocationSize, heap);
+//	return Memory::CustomNew(allocationSize, heap);
 //}
 //
-//void* MemorySystem::CustomNew(size_t allocationSize, MemorySystem::Heap* heap, const char* allocationName)
+//void* Memory::CustomNew(size_t allocationSize, Memory::Heap* heap, const char* allocationName)
 //{
 //	HB_ASSERT(heap);
 //	if (heap)
@@ -45,7 +45,7 @@
 //	return nullptr;
 //}
 //
-//void* MemorySystem::CustomNew(size_t allocationSize, MemorySystem::Heap* heap)
+//void* Memory::CustomNew(size_t allocationSize, Memory::Heap* heap)
 //{
 //	HB_ASSERT(heap);
 //	if (heap)
@@ -59,27 +59,27 @@
 //
 //#pragma region CustomDelete
 //
-//void MemorySystem::CustomDelete(void* memory)
+//void Memory::CustomDelete(void* memory)
 //{
 //	if (memory)
 //	{
-//		MemorySystem::Heap::RemoveAllocation(memory);
+//		Memory::Heap::RemoveAllocation(memory);
 //	}
 //}
 //
-//void MemorySystem::CustomDelete(void* memory, const char* heapName)
+//void Memory::CustomDelete(void* memory, const char* heapName)
 //{
 //	if (memory)
 //	{
-//		MemorySystem::Heap::RemoveAllocation(memory);
+//		Memory::Heap::RemoveAllocation(memory);
 //	}
 //}
 //
-//void MemorySystem::CustomDelete(void* memory, MemorySystem::Heap* heap)
+//void Memory::CustomDelete(void* memory, Memory::Heap* heap)
 //{
 //	if (memory)
 //	{
-//		MemorySystem::Heap::RemoveAllocation(memory);
+//		Memory::Heap::RemoveAllocation(memory);
 //	}
 //}
 //

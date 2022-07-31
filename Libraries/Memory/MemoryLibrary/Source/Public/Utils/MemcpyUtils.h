@@ -2,7 +2,7 @@
 
 #include "MemoryCommon.h"
 
-namespace MemorySystem
+namespace Memory
 {
 	MEMORY_USAGE void Memcpy(void* destination, const void* source, unsigned long size);
 	MEMORY_USAGE void Memmove(void* destination, const void* source, unsigned long size);
