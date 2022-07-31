@@ -1,7 +1,7 @@
 #include "Surfaces/Bezier/Patches/CubicBezierPatch.h"
 
 #include "Lines/Curves/Bezier/Cubic/CubicBezierUtils.h"
-//#include "Libraries/Memory/MemorySystem/Source/Public/MemoryCommon.h"
+#include <Memory/MemoryLibrary/Source/Public/MemoryCommon.h>
 #include <Framework/LibraryShell/Source/Public/CustomAssert.h>
 
 using namespace Math;
@@ -32,7 +32,8 @@ void CubicBezierPatch::ReserveDimensions(unsigned long width, unsigned long heig
 	m_height = height;
 
 	unsigned long totalCount = width * height;
-	//m_points = HaveBlueNewArray(Vector3, totalCount, "CubicBezierPatch");
+	HB_ASSERT(m_points == nullptr);
+	m_points = HaveBlueNewArray(Vector3, totalCount, "CubicBezierPatch");
 }
 
 void CubicBezierPatch::Clear()
@@ -42,7 +43,7 @@ void CubicBezierPatch::Clear()
 
 	if (m_points)
 	{
-		//HaveBlueDeleteArray(m_points);
+		HaveBlueDeleteArray(m_points);
 		m_points = nullptr;
 	}
 }

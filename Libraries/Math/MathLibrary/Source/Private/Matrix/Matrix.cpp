@@ -1,7 +1,7 @@
 #include "Matrix/Matrix.h"
 
 #include <Framework/LibraryShell/Source/Public/CustomAssert.h>
-//#include "Libraries/Memory/MemorySystem/Source/Public/MemoryCommon.h"
+#include <Memory/MemoryLibrary/Source/Public/MemoryCommon.h>
 
 using namespace Math;
 
@@ -117,7 +117,7 @@ void Matrix::Setup(unsigned numberOfRows, unsigned numberOfColumns)
 	m_columnCount = numberOfColumns;
 	HB_ASSERT(GetTotalElementCount() > 0);
 
-	//m_data = HaveBlueNewArray(float, GetTotalElementCount(), "Matrix");
+	m_data = HaveBlueNewArray(float, GetTotalElementCount(), "Matrix");
 	
 	ZeroOut();
 }
@@ -126,7 +126,7 @@ void Matrix::Clear()
 {
 	if (m_data)
 	{
-		//HaveBlueDeleteArray(m_data);
+		HaveBlueDeleteArray(m_data);
 		m_data = nullptr;
 	}
 

@@ -232,6 +232,9 @@
     <ProjectReference Include="..\..\Framework\LibraryShell\LibraryShell.vcxproj">
       <Project>{88a09185-508f-49e8-a204-32e36759031d}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\..\Memory\MemoryLibrary\MemoryLibrary.vcxproj">
+      <Project>{912eef20-8c48-4808-ae1c-b9582226881d}</Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
