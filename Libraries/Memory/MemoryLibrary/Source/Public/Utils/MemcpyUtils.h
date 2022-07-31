@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Memory/MemoryLibrary/Source/Public/MemoryCommon.h>
+#include "Memory/MemoryLibrary/Source/Public/MemoryCommon.h"
 
 namespace Memory
 {

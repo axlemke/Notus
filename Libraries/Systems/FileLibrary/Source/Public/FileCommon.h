@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Libraries/Framework/LibraryShell/Source/Public/DLLCommon.h"
+#include <Framework/LibraryShell/Source/Public/DLLCommon.h>
 
 #if defined(FINAL) // Don't use dlls in final builds
 #define FILE_LIBRARY_USAGE
