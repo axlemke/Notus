@@ -1,6 +1,6 @@
 #pragma once
 
-#include "MemoryCommon.h"
+#include <Memory/MemoryLibrary/Source/Public/MemoryCommon.h>
 
 namespace Memory
 {
@@ -8,4 +8,4 @@ namespace Memory
 	MEMORY_USAGE void Memmove(void* destination, const void* source, unsigned long size);
 	MEMORY_USAGE void Memset(void* destination, int value, unsigned long size);
 	MEMORY_USAGE int Memcmp(const void* pointerA, const void* pointerB, unsigned long size);
-};
+}

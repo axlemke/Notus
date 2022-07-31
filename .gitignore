@@ -52,3 +52,4 @@ x64/Debug/Notus.vcxproj.FileListAbsolute.txt
 *.lock
 *.iobj
 *.ipdb
+*.bin

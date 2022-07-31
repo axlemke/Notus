@@ -18,9 +18,6 @@
     <ClCompile Include="Source\Private\StringId.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\Framework\LibraryShell\LibraryShell.vcxproj">
       <Project>{88a09185-508f-49e8-a204-32e36759031d}</Project>
     </ProjectReference>

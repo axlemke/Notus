@@ -11,24 +11,25 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Public\RTTI.h" />
-    <ClInclude Include="Source\Public\RTTICommon.h" />
+    <ClInclude Include="Source\Public\StringCommon.h" />
+    <ClInclude Include="Source\Public\StringUtil.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Private\RTTI.cpp" />
+    <ClCompile Include="Source\Private\StringUtil.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Framework\LibraryShell\LibraryShell.vcxproj">
       <Project>{88a09185-508f-49e8-a204-32e36759031d}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\StringHashLibrary\StringHashLibrary.vcxproj">
-      <Project>{40ac1fc2-d71b-4c73-80c5-41d7c38e1dd2}</Project>
+    <ProjectReference Include="..\..\Memory\MemoryLibrary\MemoryLibrary.vcxproj">
+      <Project>{912eef20-8c48-4808-ae1c-b9582226881d}</Project>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7450AB81-E48A-4EA7-B6CB-346D8111DDA8}</ProjectGuid>
-    <RootNamespace>RTTISystem</RootNamespace>
+    <ProjectGuid>{57D7A4FE-D6CB-465E-9695-8DD31D76CA8E}</ProjectGuid>
+    <RootNamespace>TimerLibrary</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>StringLibrary</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -68,7 +69,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>RTTI_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>STRING_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -90,7 +91,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>RTTI_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>STRING_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/d2Zi+ %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
