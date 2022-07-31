@@ -55,16 +55,16 @@
       <Filter>Header Files\Devices</Filter>
     </ClInclude>
     <ClInclude Include="Source\Public\Devices\Mouse\MouseButtons.h">
-      <Filter>Source Files\Devices\Mouse</Filter>
+      <Filter>Header Files\Devices\Mouse</Filter>
     </ClInclude>
     <ClInclude Include="Source\Public\Devices\Keyboard\KeyCode.h">
-      <Filter>Source Files\Devices\Keyboard</Filter>
+      <Filter>Header Files\Devices\Keyboard</Filter>
     </ClInclude>
     <ClInclude Include="Source\Public\Devices\Controller\ControllerAxises.h">
-      <Filter>Source Files\Devices\Controller</Filter>
+      <Filter>Header Files\Devices\Controller</Filter>
     </ClInclude>
     <ClInclude Include="Source\Public\Devices\Controller\ControllerButtons.h">
-      <Filter>Source Files\Devices\Controller</Filter>
+      <Filter>Header Files\Devices\Controller</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
