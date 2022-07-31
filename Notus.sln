@@ -49,6 +49,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StringLibrary", "Libraries\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Input", "Input", "{3738A14C-B324-4DBA-AC9B-776C383ADDD1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TimerSystem", "Libraries\Systems\TimerSystem\TimerLibrary.vcxproj", "{584F120F-FDE7-4F37-A922-D53B7329F5BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -99,6 +101,10 @@ Global
 		{57D7A4FE-D6CB-465E-9695-8DD31D76CA8E}.Debug|x64.Build.0 = Debug|x64
 		{57D7A4FE-D6CB-465E-9695-8DD31D76CA8E}.Release|x64.ActiveCfg = Release|x64
 		{57D7A4FE-D6CB-465E-9695-8DD31D76CA8E}.Release|x64.Build.0 = Release|x64
+		{584F120F-FDE7-4F37-A922-D53B7329F5BE}.Debug|x64.ActiveCfg = Debug|x64
+		{584F120F-FDE7-4F37-A922-D53B7329F5BE}.Debug|x64.Build.0 = Debug|x64
+		{584F120F-FDE7-4F37-A922-D53B7329F5BE}.Release|x64.ActiveCfg = Release|x64
+		{584F120F-FDE7-4F37-A922-D53B7329F5BE}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -124,6 +130,7 @@ Global
 		{B2D41C87-BC8E-4F19-A793-6C3374BAEC85} = {98080893-51CF-4056-8E00-6957065E14CB}
 		{57D7A4FE-D6CB-465E-9695-8DD31D76CA8E} = {98080893-51CF-4056-8E00-6957065E14CB}
 		{3738A14C-B324-4DBA-AC9B-776C383ADDD1} = {F689290D-DD4F-4D32-88BB-F8D150F2C84D}
+		{584F120F-FDE7-4F37-A922-D53B7329F5BE} = {98080893-51CF-4056-8E00-6957065E14CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {58EC826A-F44B-4EAE-BAC7-7E26FB80BFFF}
