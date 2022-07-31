@@ -1,6 +1,6 @@
 #pragma once
 
-#include "MathCommon.h"
+#include "Math\MathLibrary\Source\Public\MathCommon.h"
 #include <string>
 
 namespace Math
