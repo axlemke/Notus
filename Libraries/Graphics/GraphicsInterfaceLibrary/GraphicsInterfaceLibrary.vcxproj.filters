@@ -33,9 +33,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Public\CommandList\CommandList.h">
       <Filter>Header Files\CommandList</Filter>
     </ClInclude>
@@ -48,11 +45,11 @@
     <ClInclude Include="Source\Public\GraphicsInterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Public\GraphicsInterfaceCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Private\CommandList\CommandList.cpp">
       <Filter>Source Files\CommandList</Filter>
     </ClCompile>

@@ -87,6 +87,11 @@
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GraphicsInterfaceLibrary\GraphicsInterfaceLibrary.vcxproj">
+      <Project>{fc8b283f-9521-4b78-b6fe-94943844639b}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

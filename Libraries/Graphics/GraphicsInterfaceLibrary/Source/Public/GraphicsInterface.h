@@ -1,5 +1,7 @@
 #pragma once
 
+#include "GraphicsInterfaceCommon.h"
+
 namespace Graphics
 {
 	class GraphicsInterface
@@ -7,6 +9,6 @@ namespace Graphics
 	public:
 		virtual bool IsValid() const = 0;
 		
-		bool IsInvalid() const;
+		GRAPHICS_INTERFACE_USAGE bool IsInvalid() const;
 	};
 }
