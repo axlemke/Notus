@@ -51,6 +51,9 @@
     <ClInclude Include="Source\Public\GraphicsInterfaceCommon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Public\GraphicsAPI\GraphicsAPI.h">
+      <Filter>Header Files\API</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Private\CommandList\CommandList.cpp">
