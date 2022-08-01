@@ -5,8 +5,8 @@ namespace Graphics
 	class GraphicsAPI
 	{
 	public:
-		virtual void Initialize();
-		virtual void Deinitialize();
+		virtual void Initialize() = 0;
+		virtual void Deinitialize() = 0;
 
 	};
 }
