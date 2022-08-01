@@ -37,7 +37,7 @@
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
-    <ImportGroup Label="PropertySheets">
+  <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(SolutionDir)PropertySheets\Libraries\$(Configuration)\PropertySheet.props" />
   </ImportGroup>
@@ -80,6 +80,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Source\Public\DirectXAPI.h" />
     <ClInclude Include="Source\Public\DirectXGraphicsCommon.h" />
   </ItemGroup>
   <ItemGroup>

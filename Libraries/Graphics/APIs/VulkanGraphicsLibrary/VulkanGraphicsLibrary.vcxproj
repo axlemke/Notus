@@ -79,6 +79,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Source\Public\VulkanAPI.h" />
     <ClInclude Include="Source\Public\VulkanGraphicsCommon.h" />
   </ItemGroup>
   <ItemGroup>
