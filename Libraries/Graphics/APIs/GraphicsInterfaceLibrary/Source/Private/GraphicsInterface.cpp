@@ -1,4 +1,4 @@
-#include "GraphicsInterface.h"
+#include "Graphics\APIs\GraphicsInterfaceLibrary\Source\Public\GraphicsInterface.h"
 
 using namespace Graphics;
 

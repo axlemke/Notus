@@ -1,6 +1,6 @@
 #pragma once
 
-#include "GraphicsInterfaceCommon.h"
+#include "Graphics\APIs\GraphicsInterfaceLibrary\Source\Public\GraphicsInterfaceCommon.h"
 
 namespace Graphics
 {
