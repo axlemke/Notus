@@ -61,6 +61,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GraphicsInterfaceLibrary", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VulkanGraphicsLibrary", "Libraries\Graphics\APIs\VulkanGraphicsLibrary\VulkanGraphicsLibrary.vcxproj", "{F89F107B-B0E2-48A1-BC86-C2DCFDECF236}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowLibrary", "Libraries\Systems\ApplicationWindows\WindowLibrary\WindowLibrary.vcxproj", "{EDF9906A-C36B-4759-9BCF-1BD99E8C8513}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -127,6 +129,10 @@ Global
 		{F89F107B-B0E2-48A1-BC86-C2DCFDECF236}.Debug|x64.Build.0 = Debug|x64
 		{F89F107B-B0E2-48A1-BC86-C2DCFDECF236}.Release|x64.ActiveCfg = Release|x64
 		{F89F107B-B0E2-48A1-BC86-C2DCFDECF236}.Release|x64.Build.0 = Release|x64
+		{EDF9906A-C36B-4759-9BCF-1BD99E8C8513}.Debug|x64.ActiveCfg = Debug|x64
+		{EDF9906A-C36B-4759-9BCF-1BD99E8C8513}.Debug|x64.Build.0 = Debug|x64
+		{EDF9906A-C36B-4759-9BCF-1BD99E8C8513}.Release|x64.ActiveCfg = Release|x64
+		{EDF9906A-C36B-4759-9BCF-1BD99E8C8513}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -158,6 +164,7 @@ Global
 		{7BF46785-313D-4C0F-A3B4-932BDB90AD45} = {FDA1B9EA-8DF0-4EF4-BE8C-E79955B0C803}
 		{FC8B283F-9521-4B78-B6FE-94943844639B} = {FDA1B9EA-8DF0-4EF4-BE8C-E79955B0C803}
 		{F89F107B-B0E2-48A1-BC86-C2DCFDECF236} = {FDA1B9EA-8DF0-4EF4-BE8C-E79955B0C803}
+		{EDF9906A-C36B-4759-9BCF-1BD99E8C8513} = {34457986-EF55-40DD-B8A4-F2B2C228E999}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {58EC826A-F44B-4EAE-BAC7-7E26FB80BFFF}

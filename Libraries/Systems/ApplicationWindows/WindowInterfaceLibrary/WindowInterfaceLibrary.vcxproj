@@ -15,7 +15,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Public\ApplicationWindow.h" />
-    <ClInclude Include="Source\Public\WindowInterfaceCommon.h" />
+    <ClInclude Include="Source\Public\ApplicationWindowInterfaceCommon.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Private\ApplicationWindow.cpp" />

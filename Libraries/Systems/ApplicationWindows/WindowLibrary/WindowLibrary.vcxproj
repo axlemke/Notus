@@ -11,19 +11,25 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Public\CustomAssert.h" />
-    <ClInclude Include="Source\Public\DLLCommon.h" />
-    <ClInclude Include="Source\Public\LibraryShell.h" />
-    <ClInclude Include="Source\Public\PerformanceMarkers.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Source\Private\LibraryShell.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Public\WindowCommon.h" />
+    <ClInclude Include="Source\Public\WindowsApplicationWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Private\WindowsApplicationWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Framework\LibraryShell\LibraryShell.vcxproj">
+      <Project>{88a09185-508f-49e8-a204-32e36759031d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowInterfaceLibrary\WindowInterfaceLibrary.vcxproj">
+      <Project>{43a7f8fb-6e5d-4c22-8613-c24ae17f22e0}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{88A09185-508F-49E8-A204-32E36759031D}</ProjectGuid>
+    <ProjectGuid>{EDF9906A-C36B-4759-9BCF-1BD99E8C8513}</ProjectGuid>
     <RootNamespace>LibraryShell</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -65,7 +71,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>LIBRARYSHELL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WINDOWs_APPLICATION_WINDOW_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -87,7 +93,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>LIBRARYSHELL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WINDOWs_APPLICATION_WINDOW_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/d2Zi+ %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>

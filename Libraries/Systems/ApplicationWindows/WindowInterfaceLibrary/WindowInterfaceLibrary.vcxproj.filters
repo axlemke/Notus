@@ -18,7 +18,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Public\WindowInterfaceCommon.h">
+    <ClInclude Include="Source\Public\ApplicationWindowInterfaceCommon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\Public\ApplicationWindow.h">
