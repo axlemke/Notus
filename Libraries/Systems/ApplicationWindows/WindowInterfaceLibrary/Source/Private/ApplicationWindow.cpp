@@ -1,5 +1,7 @@
 #include "Systems/ApplicationWindows/WindowInterfaceLibrary/Source/Public/ApplicationWindow.h"
 
+#include <Framework/LibraryShell/Source/Public/CustomAssert.h>
+
 using namespace Systems;
 
 constexpr unsigned short k_defaultWindowWidth = 1000;
@@ -27,6 +29,12 @@ unsigned short ApplicationWindow::GetHeight() const
 	return m_height;
 }
 
+float ApplicationWindow::GetAspectRatio() const
+{
+	HB_ASSERT(m_height != 0);
+	return static_cast<float>(m_width) / static_cast<float>(m_height);
+}
+
 unsigned short ApplicationWindow::GetClientWidth() const
 {
 	return m_clientWidth;
@@ -35,4 +43,9 @@ unsigned short ApplicationWindow::GetClientWidth() const
 unsigned short ApplicationWindow::GetClientHeight() const
 {
 	return m_clientHeight;
+}
+float ApplicationWindow::GetClientAspectRatio() const
+{
+	HB_ASSERT(m_clientHeight != 0);
+	return static_cast<float>(m_clientWidth) / static_cast<float>(m_clientHeight);
 }
