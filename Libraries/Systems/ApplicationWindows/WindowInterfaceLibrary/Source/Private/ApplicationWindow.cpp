@@ -9,6 +9,7 @@ constexpr unsigned short k_defaultWindowHeight = 1000;
 
 ApplicationWindow::ApplicationWindow(const char* name)
 	: m_name(name)
+	, m_isActive(true)
 	, m_width(k_defaultWindowWidth)
 	, m_height(k_defaultWindowHeight)
 	, m_clientWidth(k_defaultWindowWidth)
@@ -59,4 +60,9 @@ float ApplicationWindow::GetClientAspectRatio() const
 {
 	HB_ASSERT(m_clientHeight != 0);
 	return static_cast<float>(m_clientWidth) / static_cast<float>(m_clientHeight);
+}
+
+bool ApplicationWindow::IsActive() const
+{
+	return m_isActive;
 }

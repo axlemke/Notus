@@ -20,6 +20,7 @@ namespace Systems
 		WINDOW_INTERFACE_USAGE unsigned short GetClientWidth() const;
 		WINDOW_INTERFACE_USAGE unsigned short GetClientHeight() const;
 		WINDOW_INTERFACE_USAGE float GetClientAspectRatio() const;
+		WINDOW_INTERFACE_USAGE bool IsActive() const;
 
 	protected:
 		std::string			m_name;
@@ -27,5 +28,6 @@ namespace Systems
 		unsigned short		m_height;
 		unsigned short		m_clientWidth;
 		unsigned short		m_clientHeight;
+		bool				m_isActive;
 	};
 }
