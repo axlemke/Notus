@@ -2,6 +2,8 @@
 //
 
 #include <iostream>
+#include "Libraries/Graphics/APIs/DirectXGraphicsLibrary/Source/Public/DirectXAPI.h"
+#include "Libraries/Graphics/APIs/VulkanGraphicsLibrary/Source/Public/VulkanAPI.h"
 #include "Libraries/Systems/ApplicationWindows/WindowsApplicationWindowLibrary/Source/Public/WindowsApplicationWindow.h"
 
 int main()
@@ -9,6 +11,12 @@ int main()
     Systems::WindowsApplicationWindow* newWindow = new Systems::WindowsApplicationWindow();
     newWindow->Initialize();
     newWindow->DisplayWindow(true);
+
+    Graphics::DirectXAPI directXAPI;
+    Graphics::VulkanAPI vulkanAPI;
+
+    directXAPI.Initialize();
+    vulkanAPI.Initialize();
 
     std::cout << "Hello World!\n";
 }

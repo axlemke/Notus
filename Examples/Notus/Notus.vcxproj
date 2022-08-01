@@ -79,6 +79,12 @@
     <ClCompile Include="Notus.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Graphics\APIs\DirectXGraphicsLibrary\DirectXGraphicsLibrary.vcxproj">
+      <Project>{7bf46785-313d-4c0f-a3b4-932bdb90ad45}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Graphics\APIs\VulkanGraphicsLibrary\VulkanGraphicsLibrary.vcxproj">
+      <Project>{f89f107b-b0e2-48a1-bc86-c2dcfdecf236}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\..\Libraries\Systems\ApplicationWindows\ApplicationWindowInterfaceLibrary\ApplicationWindowInterfaceLibrary.vcxproj">
       <Project>{43a7f8fb-6e5d-4c22-8613-c24ae17f22e0}</Project>
     </ProjectReference>
