@@ -16,3 +16,24 @@ ApplicationWindow::ApplicationWindow()
 ApplicationWindow::~ApplicationWindow()
 {
 }
+
+
+unsigned short ApplicationWindow::GetWidth() const
+{
+	return m_width;
+}
+
+unsigned short ApplicationWindow::GetHeight() const
+{
+	return m_height;
+}
+
+unsigned short ApplicationWindow::GetClientWidth() const
+{
+	return m_clientWidth;
+}
+
+unsigned short ApplicationWindow::GetClientHeight() const
+{
+	return m_clientHeight;
+}
