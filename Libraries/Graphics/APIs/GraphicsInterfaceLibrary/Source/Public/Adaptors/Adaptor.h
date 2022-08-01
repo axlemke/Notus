@@ -10,6 +10,7 @@ namespace Graphics
 	{
 	public:
 		GRAPHICS_INTERFACE_USAGE Adaptor();
+		GRAPHICS_INTERFACE_USAGE Adaptor(const char* name);
 		GRAPHICS_INTERFACE_USAGE virtual ~Adaptor();
 
 		GRAPHICS_INTERFACE_USAGE const std::string& GetName() const;
