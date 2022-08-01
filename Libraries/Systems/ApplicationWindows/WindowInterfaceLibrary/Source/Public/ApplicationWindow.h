@@ -1,12 +1,14 @@
 #pragma once
 
 #include "Systems/ApplicationWindows/WindowInterfaceLibrary/Source/Public/WindowInterfaceCommon.h"
+#include <string>
 
 namespace Systems
 {
 	class ApplicationWindow
 	{
 	public:
+		WINDOW_INTERFACE_USAGE ApplicationWindow(const char* name);
 		WINDOW_INTERFACE_USAGE ApplicationWindow();
 		WINDOW_INTERFACE_USAGE virtual ~ApplicationWindow();
 
@@ -18,6 +20,7 @@ namespace Systems
 		WINDOW_INTERFACE_USAGE float GetClientAspectRatio() const;
 
 	protected:
+		std::string			m_name;
 		unsigned short		m_width;
 		unsigned short		m_height;
 		unsigned short		m_clientWidth;
