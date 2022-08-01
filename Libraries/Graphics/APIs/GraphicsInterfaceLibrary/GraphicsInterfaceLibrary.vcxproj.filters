@@ -31,6 +31,9 @@
     <Filter Include="Source Files\Adaptors">
       <UniqueIdentifier>{60791e1e-1746-4d4d-b7d6-9f57701aa591}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\API">
+      <UniqueIdentifier>{811d0cba-067b-46ac-811d-f7133827e1c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Public\CommandList\CommandList.h">
