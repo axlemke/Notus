@@ -78,14 +78,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Public\Adaptors\AdaptorInterface.h" />
+    <ClInclude Include="Source\Public\Adaptors\Adaptor.h" />
     <ClInclude Include="Source\Public\CommandList\CommandList.h" />
     <ClInclude Include="Source\Public\GraphicsDevice\GraphicsDevice.h" />
     <ClInclude Include="Source\Public\GraphicsInterface.h" />
     <ClInclude Include="Source\Public\GraphicsInterfaceCommon.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Private\Adaptors\AdaptorInterface.cpp" />
+    <ClCompile Include="Source\Private\Adaptors\Adaptor.cpp" />
     <ClCompile Include="Source\Private\CommandList\CommandList.cpp" />
     <ClCompile Include="Source\Private\GraphicsDevice\GraphicsDevice.cpp" />
     <ClCompile Include="Source\Private\GraphicsInterface.cpp" />

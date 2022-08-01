@@ -39,7 +39,7 @@
     <ClInclude Include="Source\Public\GraphicsDevice\GraphicsDevice.h">
       <Filter>Header Files\GraphicsDevice</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Public\Adaptors\AdaptorInterface.h">
+    <ClInclude Include="Source\Public\Adaptors\Adaptor.h">
       <Filter>Header Files\Adaptors</Filter>
     </ClInclude>
     <ClInclude Include="Source\Public\GraphicsInterface.h">
@@ -56,7 +56,7 @@
     <ClCompile Include="Source\Private\GraphicsDevice\GraphicsDevice.cpp">
       <Filter>Source Files\GraphicsDevice</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Private\Adaptors\AdaptorInterface.cpp">
+    <ClCompile Include="Source\Private\Adaptors\Adaptor.cpp">
       <Filter>Source Files\Adaptors</Filter>
     </ClCompile>
     <ClCompile Include="Source\Private\GraphicsInterface.cpp">
