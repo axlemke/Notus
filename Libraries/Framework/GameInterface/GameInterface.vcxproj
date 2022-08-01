@@ -13,6 +13,18 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Public\GameInterface.h" />
+    <ClInclude Include="Source\Public\GamerInterfaceCommon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Private\GameInterface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryShell\LibraryShell.vcxproj">
+      <Project>{88a09185-508f-49e8-a204-32e36759031d}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{ACED39FF-7FF8-4702-ABD1-E3F88F58A8B3}</ProjectGuid>
     <RootNamespace>LibraryShell</RootNamespace>
