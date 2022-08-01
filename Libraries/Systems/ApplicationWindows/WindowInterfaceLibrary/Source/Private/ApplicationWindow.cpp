@@ -25,6 +25,11 @@ ApplicationWindow::~ApplicationWindow()
 {
 }
 
+const char* ApplicationWindow::GetName() const
+{
+	return m_name.c_str();
+}
+
 unsigned short ApplicationWindow::GetWidth() const
 {
 	return m_width;
