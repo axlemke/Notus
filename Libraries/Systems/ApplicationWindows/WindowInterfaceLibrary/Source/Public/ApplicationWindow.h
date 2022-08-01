@@ -22,6 +22,9 @@ namespace Systems
 		WINDOW_INTERFACE_USAGE float GetClientAspectRatio() const;
 		WINDOW_INTERFACE_USAGE bool IsActive() const;
 
+		virtual void DisplayWindow(bool showWindow) = 0;
+		virtual void ResizeWindow(unsigned short width, unsigned short height) = 0;
+
 	protected:
 		std::string			m_name;
 		unsigned short		m_width;
