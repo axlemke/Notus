@@ -17,7 +17,6 @@ ApplicationWindow::~ApplicationWindow()
 {
 }
 
-
 unsigned short ApplicationWindow::GetWidth() const
 {
 	return m_width;
