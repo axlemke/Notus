@@ -23,7 +23,7 @@ namespace Systems
 		APPLICATION_WINDOW_INTERFACE_USAGE bool IsActive() const;
 
 		virtual void DisplayWindow(bool showWindow) = 0;
-		virtual void ResizeWindow(unsigned short width, unsigned short height) = 0;
+		//virtual void ResizeWindow(unsigned short width, unsigned short height) = 0;
 
 	protected:
 		std::string			m_name;

@@ -78,6 +78,14 @@
   <ItemGroup>
     <ClCompile Include="Notus.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Systems\ApplicationWindows\ApplicationWindowInterfaceLibrary\ApplicationWindowInterfaceLibrary.vcxproj">
+      <Project>{43a7f8fb-6e5d-4c22-8613-c24ae17f22e0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Systems\ApplicationWindows\WindowsApplicationWindowLibrary\WindowsApplicationWindowLibrary.vcxproj">
+      <Project>{edf9906a-c36b-4759-9bcf-1bd99e8c8513}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -2,8 +2,13 @@
 //
 
 #include <iostream>
+#include "Libraries/Systems/ApplicationWindows/WindowsApplicationWindowLibrary/Source/Public/WindowsApplicationWindow.h"
 
 int main()
 {
+    Systems::WindowsApplicationWindow* newWindow = new Systems::WindowsApplicationWindow();
+    newWindow->Initialize();
+    newWindow->DisplayWindow(true);
+
     std::cout << "Hello World!\n";
 }
