@@ -9,6 +9,8 @@ namespace Graphics
 	class DirectXAPI : public GraphicsAPI
 	{
 	public:
+		DIRECTX_GRAPHICS_USAGE DirectXAPI();
+		DIRECTX_GRAPHICS_USAGE virtual ~DirectXAPI();
 
 		DIRECTX_GRAPHICS_USAGE virtual void Initialize();
 		DIRECTX_GRAPHICS_USAGE virtual void Deinitialize();

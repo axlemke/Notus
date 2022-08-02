@@ -2,6 +2,14 @@
 
 using namespace Graphics;
 
+VulkanAPI::VulkanAPI()
+{
+}
+
+VulkanAPI::~VulkanAPI()
+{
+}
+
 void VulkanAPI::Initialize()
 {
 	CreateInstance();

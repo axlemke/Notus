@@ -2,6 +2,14 @@
 
 using namespace Graphics;
 
+DirectXAPI::DirectXAPI()
+{
+}
+
+DirectXAPI::~DirectXAPI()
+{
+}
+
 void DirectXAPI::Initialize()
 {
 	CreateFactory();

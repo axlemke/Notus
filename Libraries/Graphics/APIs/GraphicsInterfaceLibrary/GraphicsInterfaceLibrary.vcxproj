@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Private\Adaptors\Adaptor.cpp" />
+    <ClCompile Include="Source\Private\API\GraphicsAPI.cpp" />
     <ClCompile Include="Source\Private\CommandList\CommandList.cpp" />
     <ClCompile Include="Source\Private\GraphicsDevice\GraphicsDevice.cpp" />
     <ClCompile Include="Source\Private\GraphicsInterface.cpp" />

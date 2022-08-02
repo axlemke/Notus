@@ -8,7 +8,9 @@ namespace Graphics
 	class VulkanAPI : public GraphicsAPI
 	{
 	public:
-
+		VULKAN_GRAPHICS_USAGE VulkanAPI();
+		VULKAN_GRAPHICS_USAGE virtual ~VulkanAPI();
+		
 		VULKAN_GRAPHICS_USAGE virtual void Initialize();
 		VULKAN_GRAPHICS_USAGE virtual void Deinitialize();
 

@@ -34,6 +34,9 @@
     <Filter Include="Header Files\API">
       <UniqueIdentifier>{811d0cba-067b-46ac-811d-f7133827e1c3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\API">
+      <UniqueIdentifier>{81ad73e5-2d64-4aa6-98c1-8051680f6954}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Public\CommandList\CommandList.h">
@@ -67,6 +70,9 @@
     </ClCompile>
     <ClCompile Include="Source\Private\GraphicsInterface.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\API\GraphicsAPI.cpp">
+      <Filter>Source Files\API</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
