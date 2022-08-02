@@ -55,12 +55,6 @@
     <Filter Include="Source Files\Volumes\Sphere">
       <UniqueIdentifier>{3698fa14-014f-446a-9397-5722d71fee8b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Hashing">
-      <UniqueIdentifier>{003b5b39-1a55-420f-962d-68a4a2060b6e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Hashing">
-      <UniqueIdentifier>{e04253eb-bd4a-4e41-b1b5-00ef51694032}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Operations">
       <UniqueIdentifier>{ba215f02-a43a-47fa-a7d3-89fe5b6b1407}</UniqueIdentifier>
     </Filter>
@@ -239,9 +233,6 @@
     </ClInclude>
     <ClInclude Include="Source\Public\Vector\Vector4.h">
       <Filter>Header Files\Vector</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Public\Hashing\Hashing.h">
-      <Filter>Header Files\Hashing</Filter>
     </ClInclude>
     <ClInclude Include="Source\Public\Volumes\AxisAlignedBoundingBox\AxisAlignedBoundingBox2D.h">
       <Filter>Header Files\Volumes\AxisAlignedBoundingBox</Filter>
@@ -439,9 +430,6 @@
     </ClCompile>
     <ClCompile Include="Source\Private\Vector\Vector4.cpp">
       <Filter>Source Files\Vector</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Private\Hashing\Hashing.cpp">
-      <Filter>Source Files\Hashing</Filter>
     </ClCompile>
     <ClCompile Include="Source\Private\Volumes\AxisAlignedBoundingBox\AxisAlignedBoundingBox2D.cpp">
       <Filter>Source Files\Volumes\AxisAlignedBoundingBox</Filter>

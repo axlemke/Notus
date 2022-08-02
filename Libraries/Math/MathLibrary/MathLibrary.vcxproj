@@ -93,7 +93,6 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Public\Hashing\Hashing.h" />
     <ClInclude Include="Source\Public\Int\Int2.h" />
     <ClInclude Include="Source\Public\Int\Int3.h" />
     <ClInclude Include="Source\Public\Int\Int4.h" />
@@ -162,7 +161,6 @@
     <ClInclude Include="Source\Public\Volumes\Sphere\Sphere3D.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Private\Hashing\Hashing.cpp" />
     <ClCompile Include="Source\Private\Int\Int2.cpp" />
     <ClCompile Include="Source\Private\Int\Int3.cpp" />
     <ClCompile Include="Source\Private\Int\Int4.cpp" />

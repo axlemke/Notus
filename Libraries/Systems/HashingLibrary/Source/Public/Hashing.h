@@ -1,9 +1,9 @@
 #pragma once
 
-#include "MathCommon.h"
+#include "Systems/HashingLibrary/Source/Public/HashingCommon.h"
 #include <functional>
 
-namespace Math
+namespace Hashing
 {
 	//template <class T>
 	//inline void HashCombine(std::size_t& seed, const T& v)
@@ -19,6 +19,6 @@ namespace Math
 		return existingValue;
 	}
 
-	MATH_USAGE unsigned long Morton3(unsigned long x, unsigned long y, unsigned long z);
-	MATH_USAGE unsigned long Part1By2(unsigned long x);
-};
+	HASHING_USAGE unsigned long Morton3(unsigned long x, unsigned long y, unsigned long z);
+	HASHING_USAGE unsigned long Part1By2(unsigned long x);
+}

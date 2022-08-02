@@ -13,6 +13,13 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Public\Hashing.h" />
+    <ClInclude Include="Source\Public\HashingCommon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Private\Hashing.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D04B23BC-9B4A-4E30-B122-3DB846C4C67C}</ProjectGuid>
     <RootNamespace>LibraryShell</RootNamespace>
@@ -56,7 +63,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>LIBRARYSHELL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HASHING_EXPORT</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -78,7 +85,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>LIBRARYSHELL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HASHING_EXPORT</PreprocessorDefinitions>
       <AdditionalOptions>/d2Zi+ %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>

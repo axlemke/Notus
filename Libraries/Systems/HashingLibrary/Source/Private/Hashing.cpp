@@ -1,8 +1,8 @@
-#include "Hashing/Hashing.h"
+#include "Systems/HashingLibrary/Source/Public/Hashing.h"
 
-using namespace Math;
+using namespace Hashing;
 
-unsigned long Math::Morton3(unsigned long x, unsigned long y, unsigned long z)
+unsigned long Hashing::Morton3(unsigned long x, unsigned long y, unsigned long z)
 {
 	// z--z--z--z--z--z--z--z--z--z-- : Part1By2(z) << 2  
 	// -y--y--y--y--y--y--y--y--y--y- : Part1By2(y) << 1  
@@ -12,7 +12,7 @@ unsigned long Math::Morton3(unsigned long x, unsigned long y, unsigned long z)
 	return (Part1By2(z) << 2) + (Part1By2(y) << 1) + Part1By2(x);
 }
 
-unsigned long Math::Part1By2(unsigned long x)
+unsigned long Hashing::Part1By2(unsigned long x)
 {
 	// x = ----------------------9876543210 : Bits initially  
 	// x = ------98----------------76543210 : After (1)  

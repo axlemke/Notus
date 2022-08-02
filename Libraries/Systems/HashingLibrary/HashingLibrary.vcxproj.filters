@@ -17,4 +17,17 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Public\Hashing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\HashingCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Private\Hashing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
