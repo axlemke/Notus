@@ -91,6 +91,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Memory\MemoryLibrary\MemoryLibrary.vcxproj">
+      <Project>{912eef20-8c48-4808-ae1c-b9582226881d}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\GraphicsInterfaceLibrary\GraphicsInterfaceLibrary.vcxproj">
       <Project>{fc8b283f-9521-4b78-b6fe-94943844639b}</Project>
     </ProjectReference>
