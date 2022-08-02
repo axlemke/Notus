@@ -14,5 +14,10 @@ namespace Graphics
 
 	protected:
 		virtual void GatherAdaptors() override;
+
+	protected:
+		void CreateInstance();
+
+
 	};
 }

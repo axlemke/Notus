@@ -8,7 +8,7 @@
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
   <PropertyGroup>
-    <_PropertySheetDisplayName>PropertySheet</_PropertySheetDisplayName>
+    <_PropertySheetDisplayName>ApplicationDebugPropertySheet</_PropertySheetDisplayName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
     <ClCompile>

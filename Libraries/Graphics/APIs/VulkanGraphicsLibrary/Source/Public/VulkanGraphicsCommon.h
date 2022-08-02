@@ -9,3 +9,8 @@
 #else // import
 #define VULKAN_GRAPHICS_USAGE LIBRARY_IMPORT
 #endif
+
+#include <vulkan/vulkan.h>
+
+#pragma comment (lib, "vulkan-1.lib")
+
