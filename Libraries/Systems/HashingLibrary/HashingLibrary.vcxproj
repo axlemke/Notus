@@ -11,19 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Public\CustomAssert.h" />
-    <ClInclude Include="Source\Public\DLLCommon.h" />
-    <ClInclude Include="Source\Public\LibraryShell.h" />
-    <ClInclude Include="Source\Public\PerformanceMarkers.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Source\Private\LibraryShell.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{88A09185-508F-49E8-A204-32E36759031D}</ProjectGuid>
+    <ProjectGuid>{D04B23BC-9B4A-4E30-B122-3DB846C4C67C}</ProjectGuid>
     <RootNamespace>LibraryShell</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
