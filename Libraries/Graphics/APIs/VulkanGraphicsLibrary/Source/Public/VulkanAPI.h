@@ -18,6 +18,6 @@ namespace Graphics
 	protected:
 		void CreateInstance();
 
-
+		VkInstance m_instance;
 	};
 }
