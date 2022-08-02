@@ -12,11 +12,11 @@ int main()
     newWindow->Initialize();
     newWindow->DisplayWindow(true);
 
-    Graphics::DirectXAPI* directXAPI = new Graphics::DirectXAPI();
-    Graphics::VulkanAPI* vulkanAPI = new Graphics::VulkanAPI();
+    Graphics::DirectXAPI directXAPI;
+    Graphics::VulkanAPI vulkanAPI;
 
-    directXAPI->Initialize();
-    vulkanAPI->Initialize();
+    directXAPI.Initialize();
+    vulkanAPI.Initialize();
 
     std::cout << "Hello World!\n";
 }
