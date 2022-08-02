@@ -14,6 +14,11 @@ namespace Graphics
 		DIRECTX_GRAPHICS_USAGE virtual void Deinitialize();
 
 	protected:
+		virtual void GatherAdaptors() override;
+
+	protected:
+		void CreateFactory();
+
 		Memory::ComPtr<ID3D12Debug> m_debugInterface;
 		Memory::ComPtr<IDXGIFactory4> m_factory;
 

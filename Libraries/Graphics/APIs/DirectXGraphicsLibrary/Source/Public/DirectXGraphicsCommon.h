@@ -16,3 +16,14 @@
 #pragma comment (lib, "D3d12.lib")
 #pragma comment (lib, "DXGI.lib")
 
+namespace DX
+{
+	inline void ThrowIfFailed(HRESULT hr)
+	{
+		if (FAILED(hr))
+		{
+			// Set a breakpoint on this line to catch DirectX API errors
+			throw std::exception();
+		}
+	}
+}

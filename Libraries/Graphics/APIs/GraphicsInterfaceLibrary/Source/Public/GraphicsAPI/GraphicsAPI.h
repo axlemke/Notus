@@ -8,5 +8,8 @@ namespace Graphics
 		virtual void Initialize() = 0;
 		virtual void Deinitialize() = 0;
 
+	protected:
+		virtual void GatherAdaptors() = 0;
+
 	};
 }

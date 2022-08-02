@@ -11,5 +11,8 @@ namespace Graphics
 
 		VULKAN_GRAPHICS_USAGE virtual void Initialize();
 		VULKAN_GRAPHICS_USAGE virtual void Deinitialize();
+
+	protected:
+		virtual void GatherAdaptors() override;
 	};
 }

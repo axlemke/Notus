@@ -9,3 +9,7 @@ void VulkanAPI::Initialize()
 void VulkanAPI::Deinitialize()
 {
 }
+
+void VulkanAPI::GatherAdaptors()
+{
+}
