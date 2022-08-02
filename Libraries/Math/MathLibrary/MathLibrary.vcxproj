@@ -93,9 +93,6 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Public\BitManipulation\BitFlags.h" />
-    <ClInclude Include="Source\Public\BitManipulation\BitManipulation.h" />
-    <ClInclude Include="Source\Public\BitManipulation\BitMask.h" />
     <ClInclude Include="Source\Public\Hashing\Hashing.h" />
     <ClInclude Include="Source\Public\Int\Int2.h" />
     <ClInclude Include="Source\Public\Int\Int3.h" />

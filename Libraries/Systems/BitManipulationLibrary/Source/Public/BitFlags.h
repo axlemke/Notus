@@ -1,8 +1,8 @@
 #pragma once
 
-#include "BitManipulation/BitMask.h"
+#include "BitMask.h"
 
-namespace Math
+namespace BitManipulation
 {	
 	template<typename FlagEnum, typename IntergerType>
 	class BitFlags : public BitMask<IntergerType>
@@ -46,10 +46,7 @@ namespace Math
 			return (*this);
 		}
 
-		void operator|=(FlagEnum flag)
-		{
-			SetFlag(flag);
-		}
+		void operator|=(FlagEnum flag);
 	};
 
 	template<typename FlagEnum>
@@ -71,4 +68,4 @@ namespace Math
 	class LongFlags : public BitFlags<FlagEnum, unsigned long>
 	{
 	};
-};
+}

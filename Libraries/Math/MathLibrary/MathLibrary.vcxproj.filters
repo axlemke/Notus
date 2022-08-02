@@ -25,9 +25,6 @@
     <Filter Include="Source Files\Volumes">
       <UniqueIdentifier>{cb008d5d-579f-4b65-b6cf-fd79e9b9ea17}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Bit Manipulation">
-      <UniqueIdentifier>{0ef7355a-cc31-40bb-b216-eded802153e6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Lines">
       <UniqueIdentifier>{bbc2448a-2523-4693-a13e-7830968b1d8e}</UniqueIdentifier>
     </Filter>
@@ -218,15 +215,6 @@
   <ItemGroup>
     <ClInclude Include="Source\Public\MathCommon.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Public\BitManipulation\BitFlags.h">
-      <Filter>Header Files\Bit Manipulation</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Public\BitManipulation\BitManipulation.h">
-      <Filter>Header Files\Bit Manipulation</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Public\BitManipulation\BitMask.h">
-      <Filter>Header Files\Bit Manipulation</Filter>
     </ClInclude>
     <ClInclude Include="Source\Public\Matrix\Matrix2x2.h">
       <Filter>Header Files\Matrix</Filter>

@@ -13,6 +13,8 @@ DirectXAPI::~DirectXAPI()
 void DirectXAPI::Initialize()
 {
 	CreateFactory();
+
+	GatherAdaptors();
 }
 
 void DirectXAPI::Deinitialize()
@@ -26,4 +28,5 @@ void DirectXAPI::CreateFactory()
 
 void DirectXAPI::GatherAdaptors()
 {
+
 }

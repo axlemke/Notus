@@ -65,6 +65,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowsApplicationWindowLib
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameInterface", "Libraries\Framework\GameInterface\GameInterface.vcxproj", "{ACED39FF-7FF8-4702-ABD1-E3F88F58A8B3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BitManipulationLibrary", "Libraries\Systems\BitManipulationLibrary\BitManipulationLibrary.vcxproj", "{FDAF69A5-2558-49D3-9D32-EEFDBDFB10C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -139,6 +141,10 @@ Global
 		{ACED39FF-7FF8-4702-ABD1-E3F88F58A8B3}.Debug|x64.Build.0 = Debug|x64
 		{ACED39FF-7FF8-4702-ABD1-E3F88F58A8B3}.Release|x64.ActiveCfg = Release|x64
 		{ACED39FF-7FF8-4702-ABD1-E3F88F58A8B3}.Release|x64.Build.0 = Release|x64
+		{FDAF69A5-2558-49D3-9D32-EEFDBDFB10C4}.Debug|x64.ActiveCfg = Debug|x64
+		{FDAF69A5-2558-49D3-9D32-EEFDBDFB10C4}.Debug|x64.Build.0 = Debug|x64
+		{FDAF69A5-2558-49D3-9D32-EEFDBDFB10C4}.Release|x64.ActiveCfg = Release|x64
+		{FDAF69A5-2558-49D3-9D32-EEFDBDFB10C4}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -172,6 +178,7 @@ Global
 		{43A7F8FB-6E5D-4C22-8613-C24AE17F22E0} = {34457986-EF55-40DD-B8A4-F2B2C228E999}
 		{EDF9906A-C36B-4759-9BCF-1BD99E8C8513} = {34457986-EF55-40DD-B8A4-F2B2C228E999}
 		{ACED39FF-7FF8-4702-ABD1-E3F88F58A8B3} = {4C7E0AAF-4345-46E4-8705-A2A6234CF086}
+		{FDAF69A5-2558-49D3-9D32-EEFDBDFB10C4} = {98080893-51CF-4056-8E00-6957065E14CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {58EC826A-F44B-4EAE-BAC7-7E26FB80BFFF}

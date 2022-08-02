@@ -13,13 +13,11 @@ VulkanAPI::~VulkanAPI()
 void VulkanAPI::Initialize()
 {
 	CreateInstance();
+
+    GatherAdaptors();
 }
 
 void VulkanAPI::Deinitialize()
-{
-}
-
-void VulkanAPI::GatherAdaptors()
 {
 }
 
@@ -50,4 +48,8 @@ void VulkanAPI::CreateInstance()
     {
 
     }
+}
+
+void VulkanAPI::GatherAdaptors()
+{
 }

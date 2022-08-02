@@ -1,8 +1,8 @@
 #pragma once
 
-#include "BitManipulation/BitManipulation.h"
+#include "BitManipulation.h"
 
-namespace Math
+namespace BitManipulation
 {
 	template<typename IntergerType>
 	class BitMask
@@ -139,7 +139,6 @@ namespace Math
 	protected:
 		IntergerType m_value;
 	};
-
 
 	using CharBitMask = BitMask<unsigned char>;
 	using ShortBitMask = BitMask<unsigned short>;
