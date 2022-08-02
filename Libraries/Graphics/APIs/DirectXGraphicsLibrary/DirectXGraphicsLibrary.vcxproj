@@ -79,11 +79,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Public\Adaptors\DirectXAdaptor.h" />
     <ClInclude Include="Source\Public\DirectXAPI.h" />
     <ClInclude Include="Source\Public\DirectXGraphicsCommon.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Source\Private\Adaptors\DirectXAdaptor.cpp" />
     <ClCompile Include="Source\Private\DirectXAPI.cpp" />
   </ItemGroup>
   <ItemGroup>

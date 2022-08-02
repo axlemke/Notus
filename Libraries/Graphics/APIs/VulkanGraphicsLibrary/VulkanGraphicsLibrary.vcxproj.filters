@@ -27,6 +27,9 @@
     <ClInclude Include="Source\Public\VulkanAPI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Public\Adaptors\VulkanAdaptor.h">
+      <Filter>Header Files\Adaptors</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -34,6 +37,9 @@
     </ClCompile>
     <ClCompile Include="Source\Private\VulkanAPI.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Adaptors\VulkanAdaptor.cpp">
+      <Filter>Source Files\Adaptors</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -90,11 +90,13 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Public\Adaptors\VulkanAdaptor.h" />
     <ClInclude Include="Source\Public\VulkanAPI.h" />
     <ClInclude Include="Source\Public\VulkanGraphicsCommon.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Source\Private\Adaptors\VulkanAdaptor.cpp" />
     <ClCompile Include="Source\Private\VulkanAPI.cpp" />
   </ItemGroup>
   <ItemGroup>
