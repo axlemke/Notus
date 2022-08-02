@@ -13,11 +13,14 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Adaptors">
+      <UniqueIdentifier>{9bc9d6b3-c3d5-460a-99ca-ae0c10668bc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Adaptors">
+      <UniqueIdentifier>{34297a5f-eeae-461b-aaa5-222602ab4688}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Public\DirectXGraphicsCommon.h">
       <Filter>Header Files</Filter>
     </ClInclude>

@@ -11,10 +11,10 @@ namespace Graphics
 		VULKAN_GRAPHICS_USAGE VulkanAPI();
 		VULKAN_GRAPHICS_USAGE virtual ~VulkanAPI();
 		
-		VULKAN_GRAPHICS_USAGE virtual void Initialize();
 		VULKAN_GRAPHICS_USAGE virtual void Deinitialize();
 
 	protected:
+		virtual void CreateFactoryOrInstance() override;
 		virtual void GatherAdaptors() override;
 
 	protected:

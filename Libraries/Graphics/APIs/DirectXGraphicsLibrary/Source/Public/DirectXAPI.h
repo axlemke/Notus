@@ -12,10 +12,10 @@ namespace Graphics
 		DIRECTX_GRAPHICS_USAGE DirectXAPI();
 		DIRECTX_GRAPHICS_USAGE virtual ~DirectXAPI();
 
-		DIRECTX_GRAPHICS_USAGE virtual void Initialize();
 		DIRECTX_GRAPHICS_USAGE virtual void Deinitialize();
 
 	protected:
+		virtual void CreateFactoryOrInstance() override;
 		virtual void GatherAdaptors() override;
 
 	protected:

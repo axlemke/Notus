@@ -1,6 +1,6 @@
 #pragma once
 
-#include "MemoryCommon.h"
+#include "Memory/MemoryLibrary/Source/Public/MemoryCommon.h"
 
 namespace Memory
 {
@@ -137,7 +137,7 @@ inline void operator delete[](void* memory)
 
 #else
 
-#include "Utils/CustomNewDeleteUtils.h"
+#include "Memory/MemoryLibrary/Source/Public/Utils/CustomNewDeleteUtils.h"
 
 #if SUPPORTS_ALLOCATION_TYPENAME
 #define HaveBlueNew(type, heap) ::new (Memory::CustomNew(sizeof(type), heap, #type) )

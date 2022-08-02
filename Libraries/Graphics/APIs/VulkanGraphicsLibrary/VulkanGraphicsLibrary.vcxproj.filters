@@ -13,11 +13,14 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Adaptors">
+      <UniqueIdentifier>{9538e6c2-59c5-45ec-84dc-657fd5880583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Adaptors">
+      <UniqueIdentifier>{5f91cd77-6c1f-4086-b84d-75b75ae4c64a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Public\VulkanGraphicsCommon.h">
       <Filter>Header Files</Filter>
     </ClInclude>

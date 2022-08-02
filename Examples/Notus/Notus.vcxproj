@@ -84,6 +84,9 @@
     <ProjectReference Include="..\..\Libraries\Graphics\APIs\DirectXGraphicsLibrary\DirectXGraphicsLibrary.vcxproj">
       <Project>{7bf46785-313d-4c0f-a3b4-932bdb90ad45}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Graphics\APIs\GraphicsInterfaceLibrary\GraphicsInterfaceLibrary.vcxproj">
+      <Project>{fc8b283f-9521-4b78-b6fe-94943844639b}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\..\Libraries\Graphics\APIs\VulkanGraphicsLibrary\VulkanGraphicsLibrary.vcxproj">
       <Project>{f89f107b-b0e2-48a1-bc86-c2dcfdecf236}</Project>
     </ProjectReference>

@@ -3,6 +3,7 @@
 using namespace Graphics;
 
 VulkanAPI::VulkanAPI()
+    : GraphicsAPI()
 {
 }
 
@@ -10,14 +11,16 @@ VulkanAPI::~VulkanAPI()
 {
 }
 
-void VulkanAPI::Initialize()
+void VulkanAPI::Deinitialize()
 {
-	CreateInstance();
-
-    GatherAdaptors();
 }
 
-void VulkanAPI::Deinitialize()
+void VulkanAPI::CreateFactoryOrInstance()
+{
+    CreateInstance();
+}
+
+void VulkanAPI::GatherAdaptors()
 {
 }
 
@@ -48,8 +51,4 @@ void VulkanAPI::CreateInstance()
     {
 
     }
-}
-
-void VulkanAPI::GatherAdaptors()
-{
 }
